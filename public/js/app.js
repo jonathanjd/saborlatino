@@ -73695,7 +73695,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -73706,6 +73706,21 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -73721,7 +73736,44 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("Mission")])
+  return _c(
+    "v-container",
+    { attrs: { "grid-list-md": "", fluid: "" } },
+    [
+      _c(
+        "v-row",
+        { staticClass: "box-bg py-10" },
+        [
+          _c(
+            "v-container",
+            { attrs: { "grid-list-md": "" } },
+            [
+              _c(
+                "v-row",
+                [
+                  _c("v-col", [
+                    _c("div", { staticClass: "display-2 py-5" }, [
+                      _vm._v("\n            Misión\n          ")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "headline" }, [
+                      _vm._v(
+                        "\n            My Company tiene como misión vital de entrenar, dirigir y acompañar a todos los que sienten el deseo de obtener una mejor calidad de vida personal y familiar.\n          "
+                      )
+                    ])
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
