@@ -6,7 +6,7 @@
           <div class="image-box__overlay"></div>
           <v-row align="center" class="lightbox black--text pa-12 fill-height">
             <v-col>
-              <div class="display-2">Wellness Life & Coaching</div>
+              <div class="display-2">My Company</div>
               <div class="headline">Piensa, cree, sueña y atrevéte.</div>
             </v-col>
           </v-row>

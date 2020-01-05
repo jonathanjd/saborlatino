@@ -73344,7 +73344,7 @@ var render = function() {
         "v-toolbar",
         { attrs: { flat: "" } },
         [
-          _c("v-toolbar-title", [_vm._v("Logo Company")]),
+          _c("v-toolbar-title", [_vm._v("Logo My Company")]),
           _vm._v(" "),
           _c("v-spacer"),
           _vm._v(" "),
@@ -73372,7 +73372,7 @@ var render = function() {
                           _c(
                             "v-btn",
                             _vm._g(
-                              { attrs: { color: "pink lighten-4", dark: "" } },
+                              { attrs: { color: "yellow accent-4", dark: "" } },
                               on
                             ),
                             [_vm._v("\n          Más\n        ")]
@@ -73576,7 +73576,7 @@ var render = function() {
                     [
                       _c("v-col", [
                         _c("div", { staticClass: "display-2" }, [
-                          _vm._v("Wellness Life & Coaching")
+                          _vm._v("My Company")
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "headline" }, [
@@ -73871,7 +73871,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -73882,6 +73882,31 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -73897,7 +73922,54 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("About")])
+  return _c(
+    "v-container",
+    { attrs: { "grid-list-md": "" } },
+    [
+      _c(
+        "v-row",
+        [
+          _c(
+            "v-col",
+            [
+              _c(
+                "v-card",
+                { staticClass: "mx-auto", attrs: { "max-width": "800" } },
+                [
+                  _c(
+                    "v-img",
+                    {
+                      staticClass: "white--text align-end",
+                      attrs: { height: "400px", src: "/img/who.jpg" }
+                    },
+                    [
+                      _c("v-card-title", { staticClass: "title" }, [
+                        _vm._v("¿Quiénes somos?")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-card-text", { staticClass: "text--primary" }, [
+                    _c("div", { staticClass: "text-justify subtitle-1" }, [
+                      _c("strong", [_vm._v("My Company")]),
+                      _vm._v(
+                        " se creó para ofrecer un entrenamiento en el crecimiento personal y familiar. Específico para aquellas personas que necesitan y creen que el bienestar y el rendimiento se consiguen a través de una dirección y una orientación profesional. Entrenamos y acompañamos a las personas en su proceso de cumplir sus objetivos, metas, propósitos y dirigirlos a que logren una satisfacción personal que los lleve a descubrir lo que realmente es importante en su vida.\n          "
+                      )
+                    ])
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -73995,7 +74067,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -74006,6 +74078,113 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -74021,7 +74200,265 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("Service")])
+  return _c(
+    "v-container",
+    { attrs: { "grid-list-md": "", fluid: "" } },
+    [
+      _c(
+        "v-row",
+        { staticClass: "box-bg-grey" },
+        [
+          _c("v-col", [
+            _c("div", { staticClass: "text-lg-center display-2 py-2" }, [
+              _vm._v("Servicios")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "text-lg-center headline" }, [
+              _vm._v("Edificando Vidas y Famlias Saludables")
+            ])
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        { staticClass: "box-bg-grey" },
+        [
+          _c(
+            "v-col",
+            [
+              _c(
+                "v-card",
+                { staticClass: "mx-auto", attrs: { "max-width": "800" } },
+                [
+                  _c("v-img", {
+                    staticClass: "white--text align-end",
+                    attrs: { height: "400px", src: "/img/service1.jpg" }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    { staticClass: "text--primary" },
+                    [
+                      _c(
+                        "v-list",
+                        { attrs: { shaped: "" } },
+                        [
+                          _c(
+                            "v-list-item-group",
+                            { attrs: { color: "primary" } },
+                            [
+                              _c(
+                                "v-list-item",
+                                [
+                                  _c(
+                                    "v-list-item-icon",
+                                    [_c("v-icon", [_vm._v("fas fa-circle")])],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list-item-content",
+                                    [
+                                      _c("v-list-item-title", [
+                                        _vm._v("Coaching Personal")
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-list-item",
+                                [
+                                  _c(
+                                    "v-list-item-icon",
+                                    [_c("v-icon", [_vm._v("fas fa-circle")])],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list-item-content",
+                                    [
+                                      _c("v-list-item-title", [
+                                        _vm._v("Coaching Familiar")
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-list-item",
+                                [
+                                  _c(
+                                    "v-list-item-icon",
+                                    [_c("v-icon", [_vm._v("fas fa-circle")])],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list-item-content",
+                                    [
+                                      _c("v-list-item-title", [
+                                        _vm._v("Grupos de apoyo")
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-list-item",
+                                [
+                                  _c(
+                                    "v-list-item-icon",
+                                    [_c("v-icon", [_vm._v("fas fa-circle")])],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list-item-content",
+                                    [
+                                      _c("v-list-item-title", [
+                                        _vm._v("Manejo de temperamento")
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-list-item",
+                                [
+                                  _c(
+                                    "v-list-item-icon",
+                                    [_c("v-icon", [_vm._v("fas fa-circle")])],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list-item-content",
+                                    [
+                                      _c("v-list-item-title", [
+                                        _vm._v(
+                                          "Modificación de pensamiento, comportamiento y actitudes"
+                                        )
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-list-item",
+                                [
+                                  _c(
+                                    "v-list-item-icon",
+                                    [_c("v-icon", [_vm._v("fas fa-circle")])],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list-item-content",
+                                    [
+                                      _c("v-list-item-title", [
+                                        _vm._v("Coaching de salud y nutrición")
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("v-divider"),
+                      _vm._v(" "),
+                      _c(
+                        "v-list",
+                        { attrs: { subheader: "" } },
+                        [
+                          _c("v-subheader", [
+                            _vm._v(
+                              "Además ofrecemos programas de entrenamiento para la vida, personal y familiar."
+                            )
+                          ])
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        { staticClass: "box-bg-grey" },
+        [
+          _c(
+            "v-col",
+            [
+              _c(
+                "v-card",
+                { staticClass: "mx-auto", attrs: { "max-width": "800" } },
+                [
+                  _c("v-img", {
+                    staticClass: "white--text align-end",
+                    attrs: { height: "400px", src: "/img/service2.jpg" }
+                  }),
+                  _vm._v(" "),
+                  _c("v-card-text", { staticClass: "text--primary" }, [
+                    _c("div", { staticClass: "text-justify subtitle-1" }, [
+                      _vm._v(
+                        "\n          My Company entrena, dirige y acompaña para que se logre la calidad de vida y salud emocional, espiritual y mental que se merece todo ser humano.\n        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-center subtitle-1 py-4" }, [
+                      _c("strong", [
+                        _vm._v(
+                          '"Ama tu vida lo suficiente que logres un estilo de vida íntegro y saludable"'
+                        )
+                      ])
+                    ])
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -74119,7 +74556,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -74130,6 +74567,60 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -74145,7 +74636,210 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("Question")])
+  return _c(
+    "v-container",
+    { attrs: { "grid-list-md": "", fluid: "" } },
+    [
+      _c(
+        "v-row",
+        { staticClass: "box-bg py-10" },
+        [
+          _c(
+            "v-container",
+            { attrs: { "grid-list-md": "" } },
+            [
+              _c(
+                "v-row",
+                [
+                  _c(
+                    "v-col",
+                    [
+                      _c(
+                        "v-card",
+                        {
+                          staticClass: "mx-auto",
+                          attrs: { "max-width": "800", flat: "" }
+                        },
+                        [
+                          _c(
+                            "v-card-text",
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "display-2 text-lg-center py-2"
+                                },
+                                [
+                                  _vm._v(
+                                    "¿Te has hecho alguna de estás preguntas?"
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("v-divider")
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item",
+                            [
+                              _c(
+                                "v-list-item-content",
+                                [
+                                  _c(
+                                    "v-list-item-title",
+                                    { staticClass: "headline" },
+                                    [_vm._v("¿Qué significa para ti la vida?")]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item",
+                            [
+                              _c(
+                                "v-list-item-content",
+                                [
+                                  _c(
+                                    "v-list-item-title",
+                                    { staticClass: "headline" },
+                                    [_vm._v("¿Tienes alguna motivación?")]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item",
+                            [
+                              _c(
+                                "v-list-item-content",
+                                [
+                                  _c(
+                                    "v-list-item-title",
+                                    { staticClass: "headline" },
+                                    [
+                                      _vm._v(
+                                        "¿Cuántas de las promesas que te has hecho has cumplido?"
+                                      )
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item",
+                            [
+                              _c(
+                                "v-list-item-content",
+                                [
+                                  _c(
+                                    "v-list-item-title",
+                                    { staticClass: "headline" },
+                                    [_vm._v("¿Eres feliz?")]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item",
+                            [
+                              _c(
+                                "v-list-item-content",
+                                [
+                                  _c(
+                                    "v-list-item-title",
+                                    { staticClass: "headline" },
+                                    [
+                                      _vm._v(
+                                        "¿Estás haciendo lo que te hace feliz?"
+                                      )
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item",
+                            [
+                              _c(
+                                "v-list-item-content",
+                                [
+                                  _c(
+                                    "v-list-item-title",
+                                    { staticClass: "headline" },
+                                    [
+                                      _vm._v(
+                                        "¿Qué  te gustaría cambiar en tu vida?"
+                                      )
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item",
+                            [
+                              _c(
+                                "v-list-item-content",
+                                [
+                                  _c(
+                                    "v-list-item-title",
+                                    { staticClass: "headline" },
+                                    [
+                                      _vm._v(
+                                        "¿Tienes objetivos, planes, propósitos y no sabes cómo lograrlos?"
+                                      )
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -74615,7 +75309,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -74630,8 +75324,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      icons: ['fab fa-facebook-f', 'fab fa-instagram']
+    };
+  }
+});
 
 /***/ }),
 /* 100 */
@@ -74641,7 +75365,51 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("Footer")])
+  return _c(
+    "v-footer",
+    { staticClass: "my-padding-zero" },
+    [
+      _c(
+        "v-card",
+        {
+          staticClass: "grey darken-4 text-center",
+          attrs: { flat: "", tile: "", width: "100%" }
+        },
+        [
+          _c(
+            "v-card-text",
+            _vm._l(_vm.icons, function(icon) {
+              return _c(
+                "v-btn",
+                { key: icon, staticClass: "mx-4", attrs: { icon: "" } },
+                [
+                  _c("v-icon", { attrs: { size: "24px", color: "white" } }, [
+                    _vm._v(_vm._s(icon))
+                  ])
+                ],
+                1
+              )
+            }),
+            1
+          ),
+          _vm._v(" "),
+          _c("v-divider"),
+          _vm._v(" "),
+          _c("v-card-text", { staticClass: "white--text" }, [
+            _c("strong", [
+              _vm._v(
+                " ©" +
+                  _vm._s(new Date().getFullYear()) +
+                  " by myCompany.com. Proudly created with Jonathan David."
+              )
+            ])
+          ])
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
