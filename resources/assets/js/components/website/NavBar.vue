@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-toolbar>
+    <v-toolbar flat>
       <v-toolbar-title>Logo Company</v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -13,7 +13,7 @@
         <v-menu offset-y>
         <template v-slot:activator="{ on }">
           <v-btn
-            color="primary"
+            color="pink lighten-4"
             dark
             v-on="on"
           >

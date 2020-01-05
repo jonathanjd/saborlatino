@@ -73146,7 +73146,7 @@ var render = function() {
       _c(
         "v-toolbar",
         {
-          staticStyle: { "border-bottom": "5px solid black" },
+          staticStyle: { "border-bottom": "2px solid black" },
           attrs: { flat: "" }
         },
         [
@@ -73342,6 +73342,7 @@ var render = function() {
     [
       _c(
         "v-toolbar",
+        { attrs: { flat: "" } },
         [
           _c("v-toolbar-title", [_vm._v("Logo Company")]),
           _vm._v(" "),
@@ -73371,7 +73372,7 @@ var render = function() {
                           _c(
                             "v-btn",
                             _vm._g(
-                              { attrs: { color: "primary", dark: "" } },
+                              { attrs: { color: "pink lighten-4", dark: "" } },
                               on
                             ),
                             [_vm._v("\n          Más\n        ")]
@@ -73504,7 +73505,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -73515,6 +73516,20 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -73530,7 +73545,59 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("Header")])
+  return _c(
+    "v-container",
+    { attrs: { "grid-list-md": "" } },
+    [
+      _c(
+        "v-row",
+        [
+          _c(
+            "v-col",
+            [
+              _c(
+                "v-parallax",
+                {
+                  attrs: {
+                    src: "img/bg-header.jpg",
+                    height: "600",
+                    width: "100%"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "image-box__overlay" }),
+                  _vm._v(" "),
+                  _c(
+                    "v-row",
+                    {
+                      staticClass: "lightbox black--text pa-12 fill-height",
+                      attrs: { align: "center" }
+                    },
+                    [
+                      _c("v-col", [
+                        _c("div", { staticClass: "display-2" }, [
+                          _vm._v("Wellness Life & Coaching")
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "headline" }, [
+                          _vm._v("Piensa, cree, sueña y atrevéte.")
+                        ])
+                      ])
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

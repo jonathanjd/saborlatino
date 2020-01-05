@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-toolbar style="border-bottom: 5px solid black" flat>
+    <v-toolbar style="border-bottom: 2px solid black" flat>
       <v-toolbar-title></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
