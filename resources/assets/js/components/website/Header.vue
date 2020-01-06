@@ -2,12 +2,12 @@
   <v-container grid-list-md>
     <v-row>
       <v-col>
-        <v-parallax src="img/bg-header.jpg" height="600" width="100%">
+        <v-parallax data-aos="fade" src="img/bg-header.jpg" height="600" width="100%">
           <div class="image-box__overlay"></div>
           <v-row align="center" class="lightbox black--text pa-12 fill-height">
             <v-col>
-              <div class="display-2">My Company</div>
-              <div class="headline">Piensa, cree, sueña y atrevéte.</div>
+              <div data-aos="fade-right" data-aos-delay="100" class="display-2">My Company</div>
+              <div data-aos="fade-right" data-aos-delay="200" class="headline">Piensa, cree, sueña y atrevéte.</div>
             </v-col>
           </v-row>
         </v-parallax>

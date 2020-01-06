@@ -73600,6 +73600,7 @@ var render = function() {
                 "v-parallax",
                 {
                   attrs: {
+                    "data-aos": "fade",
                     src: "img/bg-header.jpg",
                     height: "600",
                     width: "100%"
@@ -73616,13 +73617,29 @@ var render = function() {
                     },
                     [
                       _c("v-col", [
-                        _c("div", { staticClass: "display-2" }, [
-                          _vm._v("My Company")
-                        ]),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "display-2",
+                            attrs: {
+                              "data-aos": "fade-right",
+                              "data-aos-delay": "100"
+                            }
+                          },
+                          [_vm._v("My Company")]
+                        ),
                         _vm._v(" "),
-                        _c("div", { staticClass: "headline" }, [
-                          _vm._v("Piensa, cree, sueña y atrevéte.")
-                        ])
+                        _c(
+                          "div",
+                          {
+                            staticClass: "headline",
+                            attrs: {
+                              "data-aos": "fade-right",
+                              "data-aos-delay": "200"
+                            }
+                          },
+                          [_vm._v("Piensa, cree, sueña y atrevéte.")]
+                        )
                       ])
                     ],
                     1
@@ -73783,7 +73800,7 @@ var render = function() {
     [
       _c(
         "v-row",
-        { staticClass: "box-bg py-10" },
+        { staticClass: "box-bg py-10", attrs: { "data-aos": "fade" } },
         [
           _c(
             "v-container",
@@ -73793,15 +73810,35 @@ var render = function() {
                 "v-row",
                 [
                   _c("v-col", [
-                    _c("div", { staticClass: "display-2 py-5" }, [
-                      _vm._v("\n            Misión\n          ")
-                    ]),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "display-2 py-5",
+                        attrs: {
+                          div: "",
+                          "data-aos": "fade-right",
+                          "data-aos-delay": "100"
+                        }
+                      },
+                      [_vm._v("\n            Misión\n          ")]
+                    ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "headline" }, [
-                      _vm._v(
-                        "\n            My Company tiene como misión vital de entrenar, dirigir y acompañar a todos los que sienten el deseo de obtener una mejor calidad de vida personal y familiar.\n          "
-                      )
-                    ])
+                    _c(
+                      "div",
+                      {
+                        staticClass: "headline",
+                        attrs: {
+                          div: "",
+                          "data-aos": "fade-right",
+                          "data-aos-delay": "200"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n            My Company tiene como misión vital de entrenar, dirigir y acompañar a todos los que sienten el deseo de obtener una mejor calidad de vida personal y familiar.\n          "
+                        )
+                      ]
+                    )
                   ])
                 ],
                 1
@@ -73975,7 +74012,10 @@ var render = function() {
             [
               _c(
                 "v-card",
-                { staticClass: "mx-auto", attrs: { "max-width": "800" } },
+                {
+                  staticClass: "mx-auto",
+                  attrs: { "data-aos": "fade", "max-width": "800" }
+                },
                 [
                   _c(
                     "v-img",
@@ -73984,20 +74024,38 @@ var render = function() {
                       attrs: { height: "400px", src: "/img/who.jpg" }
                     },
                     [
-                      _c("v-card-title", { staticClass: "title" }, [
-                        _vm._v("¿Quiénes somos?")
-                      ])
+                      _c(
+                        "v-card-title",
+                        {
+                          staticClass: "title",
+                          attrs: {
+                            "data-aos": "fade-right",
+                            "data-aos-delay": "100"
+                          }
+                        },
+                        [_vm._v("¿Quiénes somos?")]
+                      )
                     ],
                     1
                   ),
                   _vm._v(" "),
                   _c("v-card-text", { staticClass: "text--primary" }, [
-                    _c("div", { staticClass: "text-justify subtitle-1" }, [
-                      _c("strong", [_vm._v("My Company")]),
-                      _vm._v(
-                        " se creó para ofrecer un entrenamiento en el crecimiento personal y familiar. Específico para aquellas personas que necesitan y creen que el bienestar y el rendimiento se consiguen a través de una dirección y una orientación profesional. Entrenamos y acompañamos a las personas en su proceso de cumplir sus objetivos, metas, propósitos y dirigirlos a que logren una satisfacción personal que los lleve a descubrir lo que realmente es importante en su vida.\n          "
-                      )
-                    ])
+                    _c(
+                      "div",
+                      {
+                        staticClass: "text-justify subtitle-1",
+                        attrs: {
+                          "data-aos": "fade-right",
+                          "data-aos-delay": "200"
+                        }
+                      },
+                      [
+                        _c("strong", [_vm._v("My Company")]),
+                        _vm._v(
+                          " se creó para ofrecer un entrenamiento en el crecimiento personal y familiar. Específico para aquellas personas que necesitan y creen que el bienestar y el rendimiento se consiguen a través de una dirección y una orientación profesional. Entrenamos y acompañamos a las personas en su proceso de cumplir sus objetivos, metas, propósitos y dirigirlos a que logren una satisfacción personal que los lleve a descubrir lo que realmente es importante en su vida.\n          "
+                        )
+                      ]
+                    )
                   ])
                 ],
                 1
@@ -74108,7 +74166,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -74119,6 +74177,8 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
 //
 //
 //
@@ -74250,13 +74310,23 @@ var render = function() {
         { staticClass: "box-bg-grey" },
         [
           _c("v-col", [
-            _c("div", { staticClass: "text-lg-center display-2 py-2" }, [
-              _vm._v("Servicios")
-            ]),
+            _c(
+              "div",
+              {
+                staticClass: "text-lg-center display-2 py-2",
+                attrs: { "data-aos": "zoom-in" }
+              },
+              [_vm._v("Servicios")]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "text-lg-center headline" }, [
-              _vm._v("Edificando Vidas y Famlias Saludables")
-            ])
+            _c(
+              "div",
+              {
+                staticClass: "text-lg-center headline",
+                attrs: { "data-aos": "fade-right", "data-aos-delay": "100" }
+              },
+              [_vm._v("Edificando Vidas y Famlias Saludables")]
+            )
           ])
         ],
         1
@@ -74275,7 +74345,11 @@ var render = function() {
                 [
                   _c("v-img", {
                     staticClass: "white--text align-end",
-                    attrs: { height: "400px", src: "/img/service1.jpg" }
+                    attrs: {
+                      "data-aos": "zoom-in",
+                      height: "400px",
+                      src: "/img/service1.jpg"
+                    }
                   }),
                   _vm._v(" "),
                   _c(
@@ -74292,6 +74366,12 @@ var render = function() {
                             [
                               _c(
                                 "v-list-item",
+                                {
+                                  attrs: {
+                                    "data-aos": "flip-up",
+                                    "data-aos-delay": "150"
+                                  }
+                                },
                                 [
                                   _c(
                                     "v-list-item-icon",
@@ -74314,6 +74394,12 @@ var render = function() {
                               _vm._v(" "),
                               _c(
                                 "v-list-item",
+                                {
+                                  attrs: {
+                                    "data-aos": "flip-up",
+                                    "data-aos-delay": "200"
+                                  }
+                                },
                                 [
                                   _c(
                                     "v-list-item-icon",
@@ -74336,6 +74422,12 @@ var render = function() {
                               _vm._v(" "),
                               _c(
                                 "v-list-item",
+                                {
+                                  attrs: {
+                                    "data-aos": "flip-up",
+                                    "data-aos-delay": "250"
+                                  }
+                                },
                                 [
                                   _c(
                                     "v-list-item-icon",
@@ -74358,6 +74450,12 @@ var render = function() {
                               _vm._v(" "),
                               _c(
                                 "v-list-item",
+                                {
+                                  attrs: {
+                                    "data-aos": "flip-up",
+                                    "data-aos-delay": "300"
+                                  }
+                                },
                                 [
                                   _c(
                                     "v-list-item-icon",
@@ -74380,6 +74478,12 @@ var render = function() {
                               _vm._v(" "),
                               _c(
                                 "v-list-item",
+                                {
+                                  attrs: {
+                                    "data-aos": "flip-up",
+                                    "data-aos-delay": "350"
+                                  }
+                                },
                                 [
                                   _c(
                                     "v-list-item-icon",
@@ -74404,6 +74508,12 @@ var render = function() {
                               _vm._v(" "),
                               _c(
                                 "v-list-item",
+                                {
+                                  attrs: {
+                                    "data-aos": "flip-up",
+                                    "data-aos-delay": "400"
+                                  }
+                                },
                                 [
                                   _c(
                                     "v-list-item-icon",
@@ -74436,11 +74546,20 @@ var render = function() {
                         "v-list",
                         { attrs: { subheader: "" } },
                         [
-                          _c("v-subheader", [
-                            _vm._v(
-                              "Además ofrecemos programas de entrenamiento para la vida, personal y familiar."
-                            )
-                          ])
+                          _c(
+                            "v-subheader",
+                            {
+                              attrs: {
+                                "data-aos": "flip-up",
+                                "data-aos-delay": "450"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "Además ofrecemos programas de entrenamiento para la vida, personal y familiar."
+                              )
+                            ]
+                          )
                         ],
                         1
                       )
@@ -74470,23 +74589,47 @@ var render = function() {
                 [
                   _c("v-img", {
                     staticClass: "white--text align-end",
-                    attrs: { height: "400px", src: "/img/service2.jpg" }
+                    attrs: {
+                      "data-aos": "zoom-in",
+                      height: "400px",
+                      src: "/img/service2.jpg"
+                    }
                   }),
                   _vm._v(" "),
                   _c("v-card-text", { staticClass: "text--primary" }, [
-                    _c("div", { staticClass: "text-justify subtitle-1" }, [
-                      _vm._v(
-                        "\n          My Company entrena, dirige y acompaña para que se logre la calidad de vida y salud emocional, espiritual y mental que se merece todo ser humano.\n        "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "text-center subtitle-1 py-4" }, [
-                      _c("strong", [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "text-justify subtitle-1",
+                        attrs: {
+                          "data-aos": "flip-up",
+                          "data-aos-delay": "500"
+                        }
+                      },
+                      [
                         _vm._v(
-                          '"Ama tu vida lo suficiente que logres un estilo de vida íntegro y saludable"'
+                          "\n          My Company entrena, dirige y acompaña para que se logre la calidad de vida y salud emocional, espiritual y mental que se merece todo ser humano.\n        "
                         )
-                      ])
-                    ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "text-center subtitle-1 py-4",
+                        attrs: {
+                          "data-aos": "flip-up",
+                          "data-aos-delay": "550"
+                        }
+                      },
+                      [
+                        _c("strong", [
+                          _vm._v(
+                            '"Ama tu vida lo suficiente que logres un estilo de vida íntegro y saludable"'
+                          )
+                        ])
+                      ]
+                    )
                   ])
                 ],
                 1
@@ -74708,7 +74851,8 @@ var render = function() {
                               _c(
                                 "div",
                                 {
-                                  staticClass: "display-2 text-lg-center py-2"
+                                  staticClass: "display-2 text-lg-center py-2",
+                                  attrs: { "data-aos": "zoom-in" }
                                 },
                                 [
                                   _vm._v(
@@ -74730,7 +74874,13 @@ var render = function() {
                                 [
                                   _c(
                                     "v-list-item-title",
-                                    { staticClass: "headline" },
+                                    {
+                                      staticClass: "headline",
+                                      attrs: {
+                                        "data-aos": "fade-right",
+                                        "data-aos-delay": "100"
+                                      }
+                                    },
                                     [_vm._v("¿Qué significa para ti la vida?")]
                                   )
                                 ],
@@ -74748,7 +74898,13 @@ var render = function() {
                                 [
                                   _c(
                                     "v-list-item-title",
-                                    { staticClass: "headline" },
+                                    {
+                                      staticClass: "headline",
+                                      attrs: {
+                                        "data-aos": "fade-right",
+                                        "data-aos-delay": "150"
+                                      }
+                                    },
                                     [_vm._v("¿Tienes alguna motivación?")]
                                   )
                                 ],
@@ -74766,7 +74922,13 @@ var render = function() {
                                 [
                                   _c(
                                     "v-list-item-title",
-                                    { staticClass: "headline" },
+                                    {
+                                      staticClass: "headline",
+                                      attrs: {
+                                        "data-aos": "fade-right",
+                                        "data-aos-delay": "200"
+                                      }
+                                    },
                                     [
                                       _vm._v(
                                         "¿Cuántas de las promesas que te has hecho has cumplido?"
@@ -74788,7 +74950,13 @@ var render = function() {
                                 [
                                   _c(
                                     "v-list-item-title",
-                                    { staticClass: "headline" },
+                                    {
+                                      staticClass: "headline",
+                                      attrs: {
+                                        "data-aos": "fade-right",
+                                        "data-aos-delay": "250"
+                                      }
+                                    },
                                     [_vm._v("¿Eres feliz?")]
                                   )
                                 ],
@@ -74806,7 +74974,13 @@ var render = function() {
                                 [
                                   _c(
                                     "v-list-item-title",
-                                    { staticClass: "headline" },
+                                    {
+                                      staticClass: "headline",
+                                      attrs: {
+                                        "data-aos": "fade-right",
+                                        "data-aos-delay": "300"
+                                      }
+                                    },
                                     [
                                       _vm._v(
                                         "¿Estás haciendo lo que te hace feliz?"
@@ -74828,7 +75002,13 @@ var render = function() {
                                 [
                                   _c(
                                     "v-list-item-title",
-                                    { staticClass: "headline" },
+                                    {
+                                      staticClass: "headline",
+                                      attrs: {
+                                        "data-aos": "fade-right",
+                                        "data-aos-delay": "350"
+                                      }
+                                    },
                                     [
                                       _vm._v(
                                         "¿Qué  te gustaría cambiar en tu vida?"
@@ -74850,7 +75030,13 @@ var render = function() {
                                 [
                                   _c(
                                     "v-list-item-title",
-                                    { staticClass: "headline" },
+                                    {
+                                      staticClass: "headline",
+                                      attrs: {
+                                        "data-aos": "fade-right",
+                                        "data-aos-delay": "400"
+                                      }
+                                    },
                                     [
                                       _vm._v(
                                         "¿Tienes objetivos, planes, propósitos y no sabes cómo lograrlos?"
@@ -75354,11 +75540,23 @@ var render = function() {
                 [_vm._v("Contáctanos")]
               ),
               _vm._v(" "),
-              _c("p", { staticClass: "text-center" }, [
-                _vm._v("myCompany@gmail.com")
-              ]),
+              _c(
+                "p",
+                {
+                  staticClass: "text-center",
+                  attrs: { "data-aos": "fade-right", "data-aos-delay": "100" }
+                },
+                [_vm._v("myCompany@gmail.com")]
+              ),
               _vm._v(" "),
-              _c("p", { staticClass: "text-center" }, [_vm._v("954.559.7492")]),
+              _c(
+                "p",
+                {
+                  staticClass: "text-center",
+                  attrs: { "data-aos": "fade-right", "data-aos-delay": "150" }
+                },
+                [_vm._v("954.559.7492")]
+              ),
               _vm._v(" "),
               _c(
                 "p",
@@ -75769,7 +75967,7 @@ if (false) {
 /* 102 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n}\r\n^\r\n      Invalid CSS after \"}\": expected \"}\", was \"\"\r\n      in c:\\laragon\\www\\saborlatino\\resources\\assets\\sass\\app.scss (line 31, column 1)\n    at c:\\laragon\\www\\saborlatino\\node_modules\\webpack\\lib\\NormalModule.js:195:19\n    at c:\\laragon\\www\\saborlatino\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at c:\\laragon\\www\\saborlatino\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (c:\\laragon\\www\\saborlatino\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.callback (c:\\laragon\\www\\saborlatino\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.done [as callback] (c:\\laragon\\www\\saborlatino\\node_modules\\neo-async\\async.js:8067:18)\n    at options.error (c:\\laragon\\www\\saborlatino\\node_modules\\node-sass\\lib\\index.js:294:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 103 */,
