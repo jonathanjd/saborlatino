@@ -8,7 +8,8 @@
         <About></About>
         <Service></Service>
         <Question></Question>
-        <Testimony></Testimony>
+        <Video></Video>
+        <Team></Team>
         <Review></Review>
         <ContactUs></ContactUs>
         <Footer></Footer>
@@ -24,7 +25,8 @@ import Mission from './Mission';
 import About from './About';
 import Service from './Service';
 import Question from './Question';
-import Testimony from './Testimony';
+import Video from './Video';
+import Team from './Team';
 import Review from './Review';
 import ContactUs from './ContactUs';
 import Footer from './Footer';
@@ -38,7 +40,8 @@ export default {
         About,
         Service,
         Question,
-        Testimony,
+        Video,
+        Team,
         Review,
         ContactUs,
         Footer

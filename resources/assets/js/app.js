@@ -8,8 +8,32 @@
 require('./bootstrap');
 window.Vue = require('vue');
 import Vue from 'vue'
-import Vuetify from 'vuetify';
+import Vuetify from 'vuetify'
+import VueRouter from 'vue-router'
+import App from './components/base/App.vue'
+import AOS from "aos"
+import "aos/dist/aos.css"
 Vue.use(Vuetify);
+Vue.use(VueRouter)
+
+import Home from './components/website/Home'
+import Login from './components/auth/Login'
+
+const router = new VueRouter({
+  mode: 'history',
+  routes: [
+      {
+          path: '/',
+          name: 'home',
+          component: Home
+      },
+      {
+        path: '/login',
+        name: 'login',
+        component: Login,
+    },
+  ],
+});
 
 export default new Vuetify({
     icons: {
@@ -23,9 +47,13 @@ export default new Vuetify({
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('home', require('./components/website/Home.vue'));
 
 const app = new Vue({
+    created() {
+      AOS.init();
+    },
     el: '#app',
+    router,
+    components: { App },
     vuetify : new Vuetify(),
 });

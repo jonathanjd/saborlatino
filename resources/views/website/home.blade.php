@@ -4,6 +4,6 @@
 
 @section('content')
     <v-app style="background-color: white">
-        <home></home>
+        <app></app>
     </v-app>
 @endsection

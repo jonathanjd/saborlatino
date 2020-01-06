@@ -1,3 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Alice&display=swap');
 @import '~vuetify/dist/vuetify.min.css';
+@import "~vue2-animate/src/sass/vue2-animate.scss";
 
+.my-font-title {
+    font-family: 'Alice', serif;
+    font-size: 3em;
+}
+
+.my-padding-zero {
+    padding: 0;
+}
+
+.color-white {
+    color: white;
+}

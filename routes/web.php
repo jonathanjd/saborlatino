@@ -11,7 +11,4 @@
 |
 */
 
-Route::get('/', 'WebsiteController@home')->name('home');
-
-Auth::routes();
-
+Route::get('/{any}', 'WebsiteController@home')->where('any', '.*');
