@@ -13,7 +13,7 @@
             <v-icon>fab fa-instagram</v-icon>
           </v-btn>
         </p>
-        <v-form>
+        <v-form data-aos="flip-left" data-aos-delay="160">
           <v-container>
             <v-row>
               <v-col
