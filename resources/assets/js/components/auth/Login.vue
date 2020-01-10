@@ -43,7 +43,7 @@
               </v-card-text>
               <v-card-actions>
                 <v-spacer />
-                <v-btn color="primary">Iniciar</v-btn>
+                <v-btn @click="login" color="primary">Iniciar</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -54,6 +54,16 @@
 
 <script>
 export default {
+
+
+  methods: {
+
+    login() {
+      console.log('fnc Login')
+    }
+
+  }
+
 }
 </script>
 

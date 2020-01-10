@@ -18,6 +18,7 @@ Vue.use(VueRouter)
 
 import Home from './components/website/Home'
 import Login from './components/auth/Login'
+import Admin from './components/admin/Admin'
 
 const router = new VueRouter({
   mode: 'history',
@@ -31,7 +32,12 @@ const router = new VueRouter({
         path: '/login',
         name: 'login',
         component: Login,
-    },
+      },
+      {
+        path: '/admin',
+        name: 'admin',
+        component: Admin
+      }
   ],
 });
 
