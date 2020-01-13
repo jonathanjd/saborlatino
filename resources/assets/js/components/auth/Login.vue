@@ -30,6 +30,7 @@
                     name="login"
                     prepend-icon="fas fa-envelope"
                     type="text"
+                    v-model="formLogin.email"
                   />
 
                   <v-text-field
@@ -38,6 +39,7 @@
                     name="password"
                     prepend-icon="lock"
                     type="password"
+                    v-model="formLogin.password"
                   />
                 </v-form>
               </v-card-text>
@@ -55,12 +57,28 @@
 <script>
 export default {
 
+  data(){
+    return {
+      formLogin: {
+        email: '',
+        password: ''
+      }
+    }
+  },
+
+  created() {
+    if (User.loggedIn()) {
+      this.$router.push({name: 'admin'});
+    }
+  },
+
 
   methods: {
 
-    login() {
-      console.log('fnc Login')
-    }
+    login(){
+        User.login(this.formLogin);
+        this.$router.push({name: 'admin'});      
+      },
 
   }
 
