@@ -1,13 +1,105 @@
 <template>
-  <h1>Admin Component</h1>
+  <v-app id="inspire">
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+    >
+      <v-list dense>
+        <v-list-item @click="changeComponent('Start')" link>
+          <v-list-item-action>
+            <v-icon>fas fa-tachometer-alt</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Inicio</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item @click="changeComponent('Website')" link>
+          <v-list-item-action>
+            <v-icon>fas fa-paint-brush</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Sitio Web</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item @click="changeComponent('Chat')" link>
+          <v-list-item-action>
+            <v-icon>fas fa-comment-dots</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Chat</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-action>
+            <v-icon>fas fa-sign-out-alt</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Cerrar Sesion</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-app-bar
+      app
+      color="indigo"
+      dark
+    >
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-toolbar-title>Admin Panel</v-toolbar-title>
+    </v-app-bar>
+
+    <v-content>
+      <v-container
+        fluid
+      >
+        <component :is="dynamicComponent"></component> 
+      </v-container>
+    </v-content>
+    <v-footer
+      color="indigo"
+      app
+    >
+      <span class="white--text">&copy; 2020</span>
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
-export default {
 
-}
+  import Start from './Start';
+  import Chat from './chat/Chat';
+  import Website from './website/Website';
+
+  export default {
+    props: {
+      source: String,
+    },
+
+    data: () => ({
+      drawer: null,
+      dynamicComponent: Start
+    }),
+
+    methods: {
+      changeComponent(value) {
+        switch (value) {
+          case 'Start':
+            this.dynamicComponent = Start;
+            break;
+          case 'Chat':
+            this.dynamicComponent = Chat;
+            break;
+          case 'Website':
+            this.dynamicComponent = Website;
+            break;
+        }
+      }
+    },
+    components: {
+      Start,
+      Chat,
+      Website
+    }
+  }
 </script>
-
-<style>
-
-</style>
