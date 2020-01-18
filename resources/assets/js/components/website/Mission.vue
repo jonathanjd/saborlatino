@@ -7,8 +7,12 @@
             <div div data-aos="fade-right" data-aos-delay="100" class="display-2 py-5">
               Misión
             </div>
-            <div div data-aos="fade-right" data-aos-delay="200" class="headline">
-              My Company tiene como misión vital de entrenar, dirigir y acompañar a todos los que sienten el deseo de obtener una mejor calidad de vida personal y familiar.
+            <div div data-aos="fade-right" data-aos-delay="200" class="headline text-justify">
+              Yo, Sandra A. Raymond, utiliza formas únicas para ayudar a mis clientes a identificar qué cambios desean explorar. Creo que el crecimiento proviene de tener el coraje de enfrentar su verdad y desafiar las circunstancias en un espacio seguro y de apoyo. Mi enfoque es un enfoque humanista genuino, y animo a los clientes la oportunidad de aprovechar sus ideas a través de la reorientación individual. Mi rol de entrenador funciona como una guía de apoyo, que permite a los clientes encontrar formas de pensar de manera diferente con el crecimiento interno de la individualidad. Mi enfoque principal de Coaching es entender y escuchar a mis clientes y encontrar formas de comenzar un nuevo capítulo en sus vidas a través de una plataforma de autoconciencia. Quiero trabajar con mis clientes, en colaboración hacia el empoderamiento, la paz y la armonía.
+            </div>
+            <br>
+            <div div data-aos="fade-right" data-aos-delay="200" class="headline text-justify">
+              Creo que el crecimiento proviene de tener el coraje de enfrentar su verdad y desafiar las circunstancias en un espacio seguro y de apoyo. Mi enfoque es un enfoque humanista genuino, y animo a los clientes la oportunidad de aprovechar sus ideas a través de la reorientación individual. Mi rol de entrenador funciona como una guía de apoyo, que permite a los clientes encontrar formas de pensar de manera diferente con el crecimiento interno de la individualidad. Mi enfoque principal de Coaching es entender y escuchar a mis clientes y encontrar formas de comenzar un nuevo capítulo en sus vidas a través de una plataforma de autoconciencia. Quiero trabajar con mis clientes, en colaboración hacia el empoderamiento, la paz y la armonía.
             </div>
           </v-col>
         </v-row>

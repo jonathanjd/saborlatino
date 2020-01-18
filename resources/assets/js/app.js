@@ -12,6 +12,8 @@ import Vuetify from 'vuetify'
 import App from './components/base/App.vue'
 import AOS from "aos"
 import "aos/dist/aos.css"
+import { ValidationProvider } from 'vee-validate'
+Vue.use('ValidationProvider', ValidationProvider)
 Vue.use(Vuetify);
 
 export default new Vuetify({

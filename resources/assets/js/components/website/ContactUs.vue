@@ -3,7 +3,7 @@
     <v-row>
       <v-col>
         <h3 data-aos="zoom-in" class="display-2 text-center py-2 font-italic font-weight-medium">Contáctanos</h3>
-        <p data-aos="fade-right" data-aos-delay="100" class="text-center">myCompany@gmail.com</p>
+        <p data-aos="fade-right" data-aos-delay="100" class="text-center">palanteMovingForwardCoaching@gmail.com</p>
         <p data-aos="fade-right" data-aos-delay="150" class="text-center">954.559.7492</p>
         <p class="text-center">
           <v-btn icon>

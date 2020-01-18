@@ -6,7 +6,7 @@
           <div class="image-box__overlay"></div>
           <v-row align="center" class="lightbox black--text pa-12 fill-height">
             <v-col>
-              <div data-aos="fade-right" data-aos-delay="100" class="display-2">My Company</div>
+              <div data-aos="fade-right" data-aos-delay="100" class="display-2">Pa' Lante Moving Forward Coaching</div>
               <div data-aos="fade-right" data-aos-delay="200" class="headline">Piensa, cree, sueña y atrevéte.</div>
             </v-col>
           </v-row>

@@ -5,6 +5,7 @@
       app
     >
       <v-list dense>
+
         <v-list-item @click="changeComponent('Start')" link>
           <v-list-item-action>
             <v-icon>fas fa-tachometer-alt</v-icon>
@@ -13,7 +14,8 @@
             <v-list-item-title>Inicio</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item @click="changeComponent('Website')" link>
+
+        <v-list-item @click="linkWebsite" link>
           <v-list-item-action>
             <v-icon>fas fa-paint-brush</v-icon>
           </v-list-item-action>
@@ -21,6 +23,34 @@
             <v-list-item-title>Sitio Web</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item @click="changeComponent('Package')" link>
+          <v-list-item-action>
+            <v-icon>fas fa-box-open</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Paquetes</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item @click="changeComponent('Service')" link>
+          <v-list-item-action>
+            <v-icon>fas fa-list</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Service</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item @click="changeComponent('Review')" link>
+          <v-list-item-action>
+            <v-icon>fas fa-user-friends</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Reseñas</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item @click="changeComponent('Chat')" link>
           <v-list-item-action>
             <v-icon>fas fa-comment-dots</v-icon>
@@ -29,6 +59,7 @@
             <v-list-item-title>Chat</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item link>
           <v-list-item-action>
             <v-icon>fas fa-sign-out-alt</v-icon>
@@ -37,6 +68,7 @@
             <v-list-item-title>Cerrar Sesion</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
       </v-list>
     </v-navigation-drawer>
 
@@ -67,9 +99,12 @@
 
 <script>
 
-  import Start from './Start';
-  import Chat from './chat/Chat';
-  import Website from './website/Website';
+  import Start from './Start'
+  import Chat from './chat/Chat'
+  import Website from './website/Website'
+  import Package from './package/Package'
+  import Service from './service/Service'
+  import Review from './review/Review'
 
   export default {
     props: {
@@ -81,6 +116,12 @@
       dynamicComponent: Start
     }),
 
+    created() {
+      if (User.loggedIn() === false) {
+        this.$router.push({name: 'login'});
+      }
+    },
+
     methods: {
       changeComponent(value) {
         switch (value) {
@@ -90,16 +131,29 @@
           case 'Chat':
             this.dynamicComponent = Chat;
             break;
-          case 'Website':
-            this.dynamicComponent = Website;
+          case 'Package':
+            this.dynamicComponent = Package;
+            break;
+          case 'Service':
+            this.dynamicComponent = Service;
+            break;
+          case 'Review':
+            this.dynamicComponent = Review;
             break;
         }
+      },
+
+      linkWebsite() {
+        this.$router.push({name: 'home'});
       }
     },
     components: {
       Start,
       Chat,
-      Website
+      Website,
+      Package,
+      Service,
+      Review
     }
   }
 </script>

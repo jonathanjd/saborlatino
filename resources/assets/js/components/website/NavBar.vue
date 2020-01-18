@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-toolbar flat>
-      <v-toolbar-title>Logo My Company</v-toolbar-title>
+      <v-toolbar-title class="font-weight-bold">Pa' Lante Moving Forward Coaching</v-toolbar-title>
 
       <v-spacer></v-spacer>
 

@@ -9,12 +9,23 @@
       <v-btn icon>
         <v-icon>fab fa-instagram</v-icon>
       </v-btn>
+      <v-btn @click="linkLogin" icon>
+        <v-icon>fas fa-user</v-icon>
+      </v-btn>
     </v-toolbar>
   </v-container>
 </template>
 
 <script>
 export default {
+
+  methods: {
+
+    linkLogin() {
+      this.$router.push({name: 'login'});
+    }
+
+  }
 
 }
 </script>
