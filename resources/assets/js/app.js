@@ -12,8 +12,17 @@ import Vuetify from 'vuetify'
 import App from './components/base/App.vue'
 import AOS from "aos"
 import "aos/dist/aos.css"
-import { ValidationProvider } from 'vee-validate'
-Vue.use('ValidationProvider', ValidationProvider)
+import { ValidationProvider, ValidationObserver, extend } from 'vee-validate'
+import { required, min } from "vee-validate/dist/rules";
+import VueAxios from 'vue-axios'
+Vue.use(VueAxios, axios)
+extend('required', {
+  ...required,
+  message: 'El Campo es requerido'
+});
+extend('min', min);
+Vue.component('ValidationProvider', ValidationProvider)
+Vue.component('ValidationObserver', ValidationObserver)
 Vue.use(Vuetify);
 
 export default new Vuetify({

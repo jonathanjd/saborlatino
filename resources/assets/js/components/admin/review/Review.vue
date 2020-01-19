@@ -1,7 +1,7 @@
 <template>
   <v-row>
     <v-col>
-      <div class="title" :md="12">
+      <div class="display-1" :md="12">
           Reseñas
       </div>
     </v-col>
@@ -27,7 +27,7 @@
                         <td>{{ review.description }}</td>
                         <td><v-icon :color="review.active == 1 ? 'green' : 'red'">fas fa-check</v-icon></td>
                         <td>
-                          <v-btn icon @click="edit(review.name, review.description, review.active)">
+                          <v-btn icon @click="edit(review.id, review.name, review.description, review.active)">
                             <v-icon color="orange">fas fa-edit</v-icon>
                           </v-btn>
                         </td>
@@ -44,81 +44,113 @@
     </v-col>
 
     <v-col :md="6">
-      <v-card>
-        <v-card-title>
-          <h3>Crear Reseña</h3>
-        </v-card-title>
-        <v-container>
-          <form>
-            <v-text-field
-                v-model="form.name"
-                label="Usuario"
-                data-vv-name="name"
-                required
-            ></v-text-field>
+      <v-hover v-slot="{ hover }">
+        <v-card :elevation="hover ? 24 : 6">
+          <v-card-title>
+            <h3>Crear Reseña</h3>
+          </v-card-title>
+          <v-container>
+            <ValidationObserver v-slot="{ handleSubmit }" ref="obs">
+              <form @submit.prevent="handleSubmit(store)" ref="form">
+                <ValidationProvider name="Usuario" rules="required" v-slot="{ errors, valid }">
+                  <v-text-field
+                      v-model="form.name"
+                      label="Usuario"
+                      :error-messages="errors"
+                      :success="valid"
+                  ></v-text-field>
+                </ValidationProvider>
 
-            <v-textarea
-              outlined
-              v-model="form.description"
-              label="Descripcion"
-              :no-resize="true"
-            ></v-textarea>
+                <ValidationProvider name="Descripción" rules="required" v-slot="{ errors, valid }">
+                  <v-textarea
+                    v-model="form.description"
+                    label="Descripción"
+                    :no-resize="true"
+                    :error-messages="errors"
+                    :success="valid"
+                  ></v-textarea>
+                </ValidationProvider>
 
-            <v-switch
-              v-model="form.active"
-              label="Mostrar"
-            ></v-switch>
-          </form>
+                <v-switch
+                  v-model="form.active"
+                  label="Mostrar"
+                ></v-switch>
+                <v-card-actions>
+                    <v-btn color="primary" type="submit">Guardar</v-btn>
+                    <v-btn>Limpiar</v-btn>
+                </v-card-actions>
+              </form>
+            </ValidationObserver>
+          </v-container>
+        </v-card>
 
-        </v-container>
-
-        <v-card-actions>
-            <v-btn color="primary">Guardar</v-btn>
-            <v-btn>Limpiar</v-btn>
-        </v-card-actions>
-      </v-card>
+      </v-hover>
     </v-col>
 
     <v-col :md="6" v-if="myShowForm">
-      <v-card dark>
-        <v-card-title>
-          <h3>Editar Reseña</h3>
-        </v-card-title>
-        <v-container>
-          <form>
-            <v-text-field
-                v-model="formEdit.name"
-                label="Usuario"
-                data-vv-name="name"
-                required
-            ></v-text-field>
+      <v-hover v-slot="{ hover }">
+        <v-card dark :elevation="hover ? 24 : 6">
+          <v-card-title>
+            <h3>Editar Reseña</h3>
+          </v-card-title>
+          <v-container>
+            <ValidationObserver v-slot="{ handleSubmit }" ref="obs">
+              <form @submit.prevent="handleSubmit(update)" ref="form">
+                
+                <ValidationProvider name="Usuario" rules="required" v-slot="{ errors, valid }">
+                  <v-text-field
+                      v-model="formEdit.name"
+                      label="Usuario"
+                      :error-messages="errors"
+                      :success="valid"
+                  ></v-text-field>
+                </ValidationProvider>
+                
+                <ValidationProvider name="Descripción" rules="required" v-slot="{ errors, valid }">
+                  <v-textarea
+                    v-model="formEdit.description"
+                    label="Descripcion"
+                    :no-resize="true"
+                    :error-messages="errors"
+                    :success="valid"
+                  ></v-textarea>
+                </ValidationProvider>
 
-            <v-textarea
-              outlined
-              v-model="formEdit.description"
-              label="Descripcion"
-              :no-resize="true"
-            ></v-textarea>
-
-            <v-switch
-              v-model="formEdit.active"
-              label="Mostrar"
-            ></v-switch>
-          </form>
-
-        </v-container>
-
-        <v-card-actions>
-            <v-btn color="primary">Editar</v-btn>
-            <v-btn dark @click="showForm(false)">Cerrar</v-btn>
-        </v-card-actions>
-      </v-card>
+                <v-switch
+                  v-model="formEdit.active"
+                  label="Mostrar"
+                ></v-switch>
+                <v-card-actions>
+                    <v-btn color="primary" type="submit">Editar</v-btn>
+                    <v-btn dark @click="showForm(false)">Cerrar</v-btn>
+                </v-card-actions>
+              </form>
+            </ValidationObserver>
+          </v-container>
+        </v-card>
+      </v-hover>
     </v-col>
+
+    <v-snackbar
+        v-model="showSnackBar"
+        :color="typeSnack"
+        :timeout="3000"
+    >
+        {{ textSnack }}
+        <v-btn
+        color="black"
+        text
+        @click="showSnackBar = false"
+        >
+        Cerrar
+        </v-btn>
+    </v-snackbar>
 
   </v-row>
 </template>
 
 <script>
+
 export default {
 
   data() {
@@ -135,11 +167,15 @@ export default {
         active: true,
       },
       formEdit: {
+        id: '',
         name: '',
         description: '',
         active: true,
       },
-      showEditForm: false
+      showEditForm: false,
+      showSnackBar: false,
+      textSnack: '',
+      typeSnack: '',
     }
   },
 
@@ -170,8 +206,9 @@ export default {
       });
     },
 
-    edit(name, description, active) {
+    edit(id, name, description, active) {
 
+      this.formEdit.id = id;
       this.formEdit.name = name;
       this.formEdit.description = description;
       this.formEdit.active = active;
@@ -179,23 +216,63 @@ export default {
     },
 
     clearFormEdit() {
+      this.formEdit.id = '';
       this.formEdit.name = '';
       this.formEdit.description = '';
       this.formEdit.active = '';
     },
 
     clearFormCreate() {
-      this.formEdit.name = '';
-      this.formEdit.description = '';
-      this.formEdit.active = true;
+      this.form.name = '';
+      this.form.description = '';
+      this.form.active = true;
+
+      this.$refs.obs.reset();
+      this.$refs.form.reset();
     },
 
     showForm(value) {
-      console.log('object')
       this.showEditForm = value;
-    }
+    },
 
-  }
+    store() {
+
+      let data = {
+        name: this.form.name,
+        description: this.form.description,
+        active: this.form.active
+      }
+
+      Vue.axios.post('/api/reviews', data).then(response => {
+        this.typeSnack = 'success';
+        this.textSnack = 'Registro Creado con Éxito';
+        this.showSnackBar = true;
+        this.clearFormCreate();
+        this.fetchReviews();
+      });
+
+    },
+
+    update() {
+
+      let data = {
+        id: this.formEdit.id,
+        name: this.formEdit.name,
+        description: this.formEdit.description,
+        active: this.formEdit.active
+      }
+
+      Vue.axios.put('/api/reviews/' + this.formEdit.id, data).then(response => {
+        this.typeSnack = 'success';
+        this.textSnack = 'Registro Editado con Éxito';
+        this.showSnackBar = true;
+        this.showForm(false);
+        this.fetchReviews();
+      });
+    },
+    
+
+  },
 
 }
 </script>
