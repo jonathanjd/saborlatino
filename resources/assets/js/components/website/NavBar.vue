@@ -9,7 +9,7 @@
         <v-btn text>Inicio</v-btn>
         <v-btn text>Misión</v-btn>
         <v-btn text>¿Quiénes somos?</v-btn>
-        <v-btn text>Servicios</v-btn>
+        <v-btn text>Paquetes</v-btn>
         <v-menu offset-y>
         <template v-slot:activator="{ on }">
           <v-btn
@@ -41,10 +41,10 @@ export default {
 
   data: () => ({
       items: [
-        { title: 'Item1' },
-        { title: 'Item2' },
-        { title: 'Item3' },
-        { title: 'Item4' },
+        // { title: 'Item1' },
+        // { title: 'Item2' },
+        // { title: 'Item3' },
+        // { title: 'Item4' },
       ],
     }),
 }

@@ -6,7 +6,8 @@
         <Header></Header>
         <Mission></Mission>
         <About></About>
-        <Service></Service>
+        <!-- <Service></Service> -->
+        <Packages></Packages>
         <Question></Question>
         <Video></Video>
         <Team></Team>
@@ -24,6 +25,7 @@ import Header from './Header';
 import Mission from './Mission';
 import About from './About';
 import Service from './Service';
+import Packages from './Packages';
 import Question from './Question';
 import Video from './Video';
 import Team from './Team';
@@ -39,6 +41,7 @@ export default {
         Mission,
         About,
         Service,
+        Packages,
         Question,
         Video,
         Team,

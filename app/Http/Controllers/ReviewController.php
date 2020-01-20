@@ -132,4 +132,14 @@ class ReviewController extends Controller
     {
         //
     }
+
+    public function getWeb()
+    {
+        # code...
+        $reviews = Review::where('active', 1)->get();
+        return response()->json([
+            'msj' => 'success',
+            'reviews' => $reviews
+        ], 200);
+    }
 }

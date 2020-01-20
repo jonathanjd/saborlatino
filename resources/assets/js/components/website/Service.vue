@@ -98,7 +98,7 @@
 
         <v-card-text class="text--primary">
           <div class="text-justify subtitle-1" data-aos="flip-up" data-aos-delay="500">
-            My Company entrena, dirige y acompaña para que se logre la calidad de vida y salud emocional, espiritual y mental que se merece todo ser humano.
+            Pa' Lante Moving Forward Coaching entrena, dirige y acompaña para que se logre la calidad de vida y salud emocional, espiritual y mental que se merece todo ser humano.
           </div>
           <div class="text-center subtitle-1 py-4" data-aos="flip-up" data-aos-delay="550">
             <strong>"Ama tu vida lo suficiente que logres un estilo de vida íntegro y saludable"</strong>

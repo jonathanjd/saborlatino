@@ -25,6 +25,8 @@ Route::group([
 
   });
 
+  Route::get('reviews/web', 'ReviewController@getWeb');
   Route::resource('reviews', 'ReviewController');
+  Route::get('packages/web', 'PackageController@getWeb');
   Route::resource('packages', 'PackageController');
   Route::resource('detailpackages', 'DetailPackageController');

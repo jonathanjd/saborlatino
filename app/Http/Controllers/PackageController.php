@@ -122,4 +122,14 @@ class PackageController extends Controller
             'msj' => 'success'
         ]);
     }
+
+    public function getWeb()
+    {
+        # code...
+        $package = Package::with('detailsPackage')->where('active', 1)->get();
+        return response()->json([
+            'msj' => 'success',
+            'package' => $package
+        ], 200);
+    }
 }

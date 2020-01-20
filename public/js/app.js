@@ -79387,7 +79387,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -79410,18 +79410,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__About___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__About__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Service__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Service___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__Service__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Question__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Question___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__Question__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Video__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Video___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__Video__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Team__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Team___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__Team__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Review__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Review___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__Review__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ContactUs__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ContactUs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__ContactUs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__Footer__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__Footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__Footer__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Packages__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Packages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__Packages__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Question__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Question___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__Question__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Video__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Video___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__Video__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Team__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Team___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__Team__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Review__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Review___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__Review__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ContactUs__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ContactUs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__ContactUs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__Footer__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__Footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__Footer__);
 //
 //
 //
@@ -79440,6 +79442,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+
 
 
 
@@ -79463,12 +79467,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         Mission: __WEBPACK_IMPORTED_MODULE_3__Mission___default.a,
         About: __WEBPACK_IMPORTED_MODULE_4__About___default.a,
         Service: __WEBPACK_IMPORTED_MODULE_5__Service___default.a,
-        Question: __WEBPACK_IMPORTED_MODULE_6__Question___default.a,
-        Video: __WEBPACK_IMPORTED_MODULE_7__Video___default.a,
-        Team: __WEBPACK_IMPORTED_MODULE_8__Team___default.a,
-        Review: __WEBPACK_IMPORTED_MODULE_9__Review___default.a,
-        ContactUs: __WEBPACK_IMPORTED_MODULE_10__ContactUs___default.a,
-        Footer: __WEBPACK_IMPORTED_MODULE_11__Footer___default.a
+        Packages: __WEBPACK_IMPORTED_MODULE_6__Packages___default.a,
+        Question: __WEBPACK_IMPORTED_MODULE_7__Question___default.a,
+        Video: __WEBPACK_IMPORTED_MODULE_8__Video___default.a,
+        Team: __WEBPACK_IMPORTED_MODULE_9__Team___default.a,
+        Review: __WEBPACK_IMPORTED_MODULE_10__Review___default.a,
+        ContactUs: __WEBPACK_IMPORTED_MODULE_11__ContactUs___default.a,
+        Footer: __WEBPACK_IMPORTED_MODULE_12__Footer___default.a
     }
 });
 
@@ -79797,7 +79802,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   data: function data() {
     return {
-      items: [{ title: 'Item1' }, { title: 'Item2' }, { title: 'Item3' }, { title: 'Item4' }]
+      items: [
+        // { title: 'Item1' },
+        // { title: 'Item2' },
+        // { title: 'Item3' },
+        // { title: 'Item4' },
+      ]
     };
   }
 });
@@ -79832,7 +79842,7 @@ var render = function() {
               _vm._v(" "),
               _c("v-btn", { attrs: { text: "" } }, [_vm._v("¿Quiénes somos?")]),
               _vm._v(" "),
-              _c("v-btn", { attrs: { text: "" } }, [_vm._v("Servicios")]),
+              _c("v-btn", { attrs: { text: "" } }, [_vm._v("Paquetes")]),
               _vm._v(" "),
               _c(
                 "v-menu",
@@ -81067,7 +81077,7 @@ var render = function() {
                       },
                       [
                         _vm._v(
-                          "\n          My Company entrena, dirige y acompaña para que se logre la calidad de vida y salud emocional, espiritual y mental que se merece todo ser humano.\n        "
+                          "\n          Pa' Lante Moving Forward Coaching entrena, dirige y acompaña para que se logre la calidad de vida y salud emocional, espiritual y mental que se merece todo ser humano.\n        "
                         )
                       ]
                     ),
@@ -82469,7 +82479,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -82494,11 +82504,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      reviews: []
+    };
+  },
+  created: function created() {
+    this.fetchReviews();
+  },
+
+
+  methods: {
+    fetchReviews: function fetchReviews() {
+      var _this = this;
+
+      Vue.axios.get('/api/reviews/web').then(function (response) {
+
+        if (response.data.msj === 'success') {
+          _this.reviews = response.data.reviews;
+        }
+      });
+    }
+  }
+
+});
 
 /***/ }),
 /* 118 */
@@ -82516,104 +82547,52 @@ var render = function() {
         "v-row",
         { staticStyle: { "background-color": "#FAFAFA" } },
         [
-          _c("v-col", [
-            _c(
-              "h3",
-              {
-                staticClass:
-                  "display-2 text-center py-2 font-italic font-weight-medium",
-                attrs: { "data-aos": "zoom-in" }
-              },
-              [_vm._v("Reseñas")]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass: "text-center py-5 px-10",
-                attrs: { "data-aos": "fade-right" }
-              },
-              [
-                _c("v-icon", { staticClass: "mr-2" }, [
-                  _vm._v("fas fa-quote-left")
-                ]),
-                _vm._v(
-                  'Haber asistido a las charlas sobre "Salud Integral" y "Fortaleciendo Familias" me ha ayudado mucho en mi vida personal y me ha dado las herramientas para mejorar las relaciones con mi familia. Ahora me siento más abierta al diálogo con los demás y dispuesta a aceptar sus diferencias. En lo espiritual, estas charlas me han enseñado a mirar con compasión las debilidades de otros y a usar la fuerza interior que Dios me da para hacer cambios dentro de mí. El tema de los temperamentos del ser humano lo encuentro fascinante!  Descubrir nuestros temperamentos es importante y necesario para una convivencia en armonía y éxito en toda clase de relaciones. Recomiendo mucho ambos cursos, no sólo por la riqueza de sus contenidos sino también por lo agradable y ameno que Ivette como Coach los hace. Gracias querida Ivette por tu dedicación, tiempo, cariño y deseo de compartir tus conocimientos para que los demás encontremos un mejor modo de vivir.'
-                ),
-                _c("v-icon", { staticClass: "ml-2" }, [
-                  _vm._v("fas fa-quote-right")
+          _c(
+            "v-col",
+            [
+              _c(
+                "h3",
+                {
+                  staticClass:
+                    "display-2 text-center py-2 font-italic font-weight-medium",
+                  attrs: { "data-aos": "zoom-in" }
+                },
+                [_vm._v("Reseñas")]
+              ),
+              _vm._v(" "),
+              _vm._l(_vm.reviews, function(item) {
+                return _c("div", { key: item.id }, [
+                  _c(
+                    "p",
+                    {
+                      staticClass: "text-center py-5 px-10",
+                      attrs: { "data-aos": "fade-right" }
+                    },
+                    [
+                      _c("v-icon", { staticClass: "mr-2" }, [
+                        _vm._v("fas fa-quote-left")
+                      ]),
+                      _vm._v(_vm._s(item.description)),
+                      _c("v-icon", { staticClass: "ml-2" }, [
+                        _vm._v("fas fa-quote-right")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    {
+                      staticClass: "text-center",
+                      attrs: { "data-aos": "fade-right" }
+                    },
+                    [_c("strong", [_vm._v(_vm._s(item.name))])]
+                  )
                 ])
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass: "text-center",
-                attrs: { "data-aos": "fade-right" }
-              },
-              [_c("strong", [_vm._v("Sonnia León")])]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass: "text-center py-5 px-10",
-                attrs: { "data-aos": "fade-right" }
-              },
-              [
-                _c("v-icon", { staticClass: "mr-2" }, [
-                  _vm._v("fas fa-quote-left")
-                ]),
-                _vm._v(
-                  "Haber llegado a las manos de la Coach Ivette, ha sido un regalo de vida insustituible.  Recuperar la tranquilidad para manejar las situaciones estresantes ya es cosa del pasado.  Superar el miedo y la ansiedad fueron a mi entender,  los dos retos mas grandes con los cuales tuvo que trabajar mi Coach Ivette para ayudarme a alcanzar mis metas.  Hoy doy testimonio de que puedo caminar con mi frente en alto sin el temor del cual vivia presa por tantos años.  Coach que pueda usted seguir sanado familias con su paz y dedicación.  Dios le bendiga."
-                ),
-                _c("v-icon", { staticClass: "ml-2" }, [
-                  _vm._v("fas fa-quote-right")
-                ])
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass: "text-center",
-                attrs: { "data-aos": "fade-right" }
-              },
-              [_c("strong", [_vm._v("Nilmarie Álvarez")])]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass: "text-center py-5 px-10",
-                attrs: { "data-aos": "fade-right" }
-              },
-              [
-                _c("v-icon", { staticClass: "mr-2" }, [
-                  _vm._v("fas fa-quote-left")
-                ]),
-                _vm._v(
-                  "Participar del Taller de Salud Integral ha sido para mí de gran crecimiento. Conocer mi temperamento con sus fortalezas y debilidades ha sido de gran ayuda para desarrollar el propósito que Dios tiene para mi vida. \nAgradezco a Coach Ivette por su guía, paciencia pero sobretodo por las técnicas aprendidas para seguir desarrollando mi máximo potencial y vivir en paz, bendición y salud."
-                ),
-                _c("v-icon", { staticClass: "ml-2" }, [
-                  _vm._v("fas fa-quote-right")
-                ])
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass: "text-center",
-                attrs: { "data-aos": "fade-right" }
-              },
-              [_c("strong", [_vm._v("Denisse Rodríguez")])]
-            )
-          ])
+              })
+            ],
+            2
+          )
         ],
         1
       )
@@ -83247,7 +83226,7 @@ var render = function() {
       _vm._v(" "),
       _c("About"),
       _vm._v(" "),
-      _c("Service"),
+      _c("Packages"),
       _vm._v(" "),
       _c("Question"),
       _vm._v(" "),
@@ -87513,6 +87492,378 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 174 */,
+/* 175 */,
+/* 176 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(177)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(179)
+/* template */
+var __vue_template__ = __webpack_require__(180)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/website/Packages.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-f10bf4d0", Component.options)
+  } else {
+    hotAPI.reload("data-v-f10bf4d0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 177 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(178);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("486b244a", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f10bf4d0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Packages.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f10bf4d0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Packages.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 178 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 179 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            packages: [],
+            details: []
+        };
+    },
+    created: function created() {
+        this.fetchPackages();
+    },
+
+
+    methods: {
+        fetchPackages: function fetchPackages() {
+            var _this = this;
+
+            Vue.axios.get('/api/packages/web').then(function (response) {
+                if (response.data.msj === 'success') {
+                    _this.packages = response.data.package;
+                }
+            });
+        }
+    }
+
+});
+
+/***/ }),
+/* 180 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { staticClass: "box-bg-grey", attrs: { fluid: "" } },
+    [
+      _c(
+        "v-row",
+        [
+          _c("v-col", [
+            _c(
+              "h3",
+              {
+                staticClass:
+                  "display-2 text-center py-2 font-italic font-weight-medium",
+                attrs: { "data-aos": "zoom-in" }
+              },
+              [_vm._v("Paquetes")]
+            )
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        { attrs: { "data-aos": "zoom-in" } },
+        _vm._l(_vm.packages, function(item) {
+          return _c(
+            "v-col",
+            { key: item.id },
+            [
+              _c("v-hover", {
+                scopedSlots: _vm._u(
+                  [
+                    {
+                      key: "default",
+                      fn: function(ref) {
+                        var hover = ref.hover
+                        return [
+                          _c(
+                            "v-card",
+                            {
+                              staticClass: "mx-auto",
+                              attrs: {
+                                dark: item.premium == 1 ? true : false,
+                                "max-width": "344",
+                                elevation: hover ? 24 : 6
+                              }
+                            },
+                            [
+                              _c("v-img", {
+                                attrs: {
+                                  src: "/img/package.jpg",
+                                  height: "200px"
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c("v-card-title", [
+                                _vm._v(
+                                  "\n                          " +
+                                    _vm._s(item.name) +
+                                    "\n                      "
+                                )
+                              ]),
+                              _vm._v(" "),
+                              item.details_package
+                                ? _c(
+                                    "v-list",
+                                    { attrs: { shaped: "" } },
+                                    [
+                                      _c(
+                                        "v-list-item-group",
+                                        { attrs: { color: "primary" } },
+                                        _vm._l(item.details_package, function(
+                                          value
+                                        ) {
+                                          return _c(
+                                            "v-list-item",
+                                            { key: value.id },
+                                            [
+                                              _c(
+                                                "v-list-item-icon",
+                                                [
+                                                  _c("v-icon", [
+                                                    _vm._v("fas fa-circle")
+                                                  ])
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-list-item-content",
+                                                [
+                                                  _c("v-list-item-title", {
+                                                    domProps: {
+                                                      textContent: _vm._s(
+                                                        value.feature
+                                                      )
+                                                    }
+                                                  })
+                                                ],
+                                                1
+                                              )
+                                            ],
+                                            1
+                                          )
+                                        }),
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                : _vm._e(),
+                              _vm._v(" "),
+                              _c(
+                                "v-card-actions",
+                                { staticClass: "justify-center" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    {
+                                      attrs: {
+                                        text: item.premium == 1 ? false : true
+                                      }
+                                    },
+                                    [_vm._v("Compartir")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-btn",
+                                    {
+                                      attrs: {
+                                        color: "primary",
+                                        text: item.premium == 1 ? false : true
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                          Comprar\n                      "
+                                      )
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ]
+                      }
+                    }
+                  ],
+                  null,
+                  true
+                )
+              })
+            ],
+            1
+          )
+        }),
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-f10bf4d0", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
