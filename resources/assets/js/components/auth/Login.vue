@@ -77,7 +77,7 @@ export default {
 
     login(){
         User.login(this.formLogin);
-        this.$router.push({name: 'admin'});      
+        this.$router.push({name: 'admin'});
       },
 
   }
