@@ -47,8 +47,9 @@ class PackageController extends Controller
 
         $package = new Package();
         $package->name = $request->name;
-        $package->name = $request->amount;
-        $package->name = $request->premium;
+        $package->amount = $request->amount;
+        $package->premium = $request->premium;
+        $package->active = $request->active;
 
         $package->save();
         return response()->json([
@@ -95,8 +96,10 @@ class PackageController extends Controller
         $package = Package::find($id);
 
         $package->name = $request->name;
-        $package->name = $request->amount;
-        $package->name = $request->premium;
+        $package->amount = $request->amount;
+        $package->note = $request->note;
+        $package->premium = $request->premium;
+        $package->active = $request->active;
 
         $package->save();
         return response()->json([

@@ -1393,7 +1393,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(14);
-module.exports = __webpack_require__(168);
+module.exports = __webpack_require__(173);
 
 
 /***/ }),
@@ -83587,7 +83587,7 @@ var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = __webpack_require__(136)
 /* template */
-var __vue_template__ = __webpack_require__(167)
+var __vue_template__ = __webpack_require__(172)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -83639,9 +83639,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__website_Website___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__website_Website__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__package_Package__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__package_Package___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__package_Package__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__service_Service__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__service_Service__ = __webpack_require__(162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__service_Service___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__service_Service__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__review_Review__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__review_Review__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__review_Review___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__review_Review__);
 //
 //
@@ -84423,7 +84423,7 @@ var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = __webpack_require__(155)
 /* template */
-var __vue_template__ = __webpack_require__(156)
+var __vue_template__ = __webpack_require__(161)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -84496,7 +84496,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -84507,22 +84507,1646 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__DetailPackage__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__DetailPackage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__DetailPackage__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      packages: [],
+      package: {
+        name: '',
+        amount: '',
+        note: '',
+        premium: '',
+        active: ''
+      },
+      form: {
+        name: '',
+        amount: '',
+        note: '',
+        premium: false,
+        active: false
+      },
+      formEdit: {
+        id: '',
+        name: '',
+        amount: '',
+        note: '',
+        premium: '',
+        active: ''
+      },
+      showEditForm: false,
+      showSnackBar: false,
+      textSnack: '',
+      typeSnack: '',
+      showDialog: false,
+      infoDetailsPackage: {
+        id: '',
+        name: '',
+        details: ''
+      }
+    };
+  },
+  created: function created() {
+
+    this.fetchPackages();
+  },
+
+
+  computed: {
+    myShowForm: function myShowForm() {
+      return this.showEditForm;
+    }
+  },
+
+  methods: {
+    fetchPackages: function fetchPackages() {
+      var _this = this;
+
+      axios.get('/api/packages').then(function (response) {
+
+        if (response.data.msj === 'success') {
+          _this.packages = response.data.package;
+        }
+      });
+    },
+    edit: function edit(id, name, amount, note, premium, active) {
+
+      this.formEdit.id = id;
+      this.formEdit.name = name;
+      this.formEdit.amount = amount;
+      this.formEdit.note = note;
+      this.formEdit.premium = premium;
+      this.formEdit.active = active;
+      this.showForm(true);
+    },
+    clearFormEdit: function clearFormEdit() {
+      this.formEdit.id = '';
+      this.formEdit.name = '';
+      this.formEdit.amount = '';
+      this.formEdit.premium = '';
+      this.formEdit.active = '';
+    },
+    clearFormCreate: function clearFormCreate() {
+      this.form.name = '';
+      this.form.amount = '';
+      this.form.premium = false;
+      this.form.active = false;
+
+      this.$refs.obs.reset();
+      this.$refs.form.reset();
+    },
+    showForm: function showForm(value) {
+      this.showEditForm = value;
+    },
+    store: function store() {
+      var _this2 = this;
+
+      var data = {
+        name: this.form.name,
+        amount: this.form.amount,
+        note: this.form.note,
+        premium: this.form.premium,
+        active: this.form.active
+      };
+
+      Vue.axios.post('/api/packages', data).then(function (response) {
+        _this2.typeSnack = 'success';
+        _this2.textSnack = 'Registro Creado con Éxito';
+        _this2.showSnackBar = true;
+        _this2.clearFormCreate();
+        _this2.fetchPackages();
+      });
+    },
+    update: function update() {
+      var _this3 = this;
+
+      var data = {
+        id: this.formEdit.id,
+        name: this.formEdit.name,
+        amount: this.formEdit.amount,
+        note: this.formEdit.note,
+        premium: this.formEdit.premium,
+        active: this.formEdit.active
+      };
+
+      Vue.axios.put('/api/packages/' + this.formEdit.id, data).then(function (response) {
+        _this3.typeSnack = 'success';
+        _this3.textSnack = 'Registro Editado con Éxito';
+        _this3.showSnackBar = true;
+        _this3.showForm(false);
+        _this3.fetchPackages();
+      });
+    },
+    openDialog: function openDialog(id, name, details) {
+      this.showDialog = true;
+      this.infoDetailsPackage.id = id;
+      this.infoDetailsPackage.name = name;
+      this.infoDetailsPackage.details = details;
+    }
+  },
+
+  components: {
+    DetailPackAge: __WEBPACK_IMPORTED_MODULE_0__DetailPackage___default.a
+  }
+
+});
 
 /***/ }),
 /* 156 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(157)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(159)
+/* template */
+var __vue_template__ = __webpack_require__(160)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/admin/package/DetailPackage.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3b0e4185", Component.options)
+  } else {
+    hotAPI.reload("data-v-3b0e4185", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 157 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(158);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("1d81a65c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3b0e4185\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DetailPackage.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3b0e4185\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DetailPackage.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 158 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 159 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      form: {
+        feature: ''
+      }
+    };
+  },
+
+
+  props: ['myNamePackAge', 'myIdPackAge', 'myShowDialog', 'myDetails'],
+  computed: {
+    show: {
+      get: function get() {
+        return this.myShowDialog;
+      },
+      set: function set(value) {
+        if (!value) {
+          this.$emit('close');
+        }
+      }
+    },
+    details: {
+      get: function get() {
+        return this.myDetails;
+      },
+      set: function set(value) {}
+    }
+  },
+
+  methods: {
+    store: function store() {
+      var _this = this;
+
+      var data = {
+        feature: this.form.feature,
+        package_id: this.myIdPackAge
+      };
+
+      Vue.axios.post('/api/detailpackages', data).then(function (response) {
+        console.log(response);
+        _this.myDetails.push(response.data.detailpackage);
+        _this.clearFormCreate();
+      });
+    },
+    destroy: function destroy(id, index) {
+      var _this2 = this;
+
+      console.log('delete');
+      Vue.axios.delete('/api/detailpackages/' + id).then(function (response) {
+        console.log(response);
+        _this2.myDetails.splice(index, 1);
+      });
+    },
+    clearFormCreate: function clearFormCreate() {
+      this.form.feature = '';
+      this.$refs.obs.reset();
+      this.$refs.form.reset();
+    }
+  }
+
+});
+
+/***/ }),
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h3", [_vm._v("Component Package")])
+  return _c(
+    "v-dialog",
+    {
+      attrs: {
+        fullscreen: "",
+        "hide-overlay": "",
+        transition: "dialog-bottom-transition"
+      },
+      model: {
+        value: _vm.show,
+        callback: function($$v) {
+          _vm.show = $$v
+        },
+        expression: "show"
+      }
+    },
+    [
+      _c(
+        "v-card",
+        [
+          _c(
+            "v-toolbar",
+            { attrs: { dark: "", color: "indigo" } },
+            [
+              _c(
+                "v-btn",
+                {
+                  attrs: { icon: "", dark: "" },
+                  on: {
+                    click: function($event) {
+                      $event.stopPropagation()
+                      _vm.show = false
+                    }
+                  }
+                },
+                [_c("v-icon", [_vm._v("fas fa-window-close")])],
+                1
+              ),
+              _vm._v(" "),
+              _c("v-toolbar-title", [
+                _vm._v("Mi Paquete - " + _vm._s(_vm.myNamePackAge))
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-container",
+            [
+              _c(
+                "v-row",
+                [
+                  _c(
+                    "v-col",
+                    [
+                      _c("h3", [_vm._v("Características del Plan")]),
+                      _vm._v(" "),
+                      _c("v-divider"),
+                      _vm._v(" "),
+                      _c(
+                        "v-list",
+                        { attrs: { shaped: "" } },
+                        [
+                          _c(
+                            "v-list-item-group",
+                            { attrs: { color: "primary" } },
+                            _vm._l(_vm.details, function(item, index) {
+                              return _c(
+                                "v-list-item",
+                                { key: item.id },
+                                [
+                                  _c(
+                                    "v-list-item-icon",
+                                    [_c("v-icon", [_vm._v("fas fa-circle")])],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list-item-content",
+                                    [
+                                      _c("v-list-item-title", {
+                                        domProps: {
+                                          textContent: _vm._s(item.feature)
+                                        }
+                                      })
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list-item-action",
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: { icon: "" },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.destroy(item.id, index)
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "v-icon",
+                                            { attrs: { color: "red" } },
+                                            [_vm._v("fas fa-trash-alt")]
+                                          )
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            }),
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    [
+                      _c("h3", [_vm._v("Crear Característica")]),
+                      _vm._v(" "),
+                      _c("v-divider"),
+                      _vm._v(" "),
+                      _c("ValidationObserver", {
+                        ref: "obs",
+                        scopedSlots: _vm._u([
+                          {
+                            key: "default",
+                            fn: function(ref) {
+                              var handleSubmit = ref.handleSubmit
+                              return [
+                                _c(
+                                  "form",
+                                  {
+                                    ref: "form",
+                                    on: {
+                                      submit: function($event) {
+                                        $event.preventDefault()
+                                        return handleSubmit(_vm.store)
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c("ValidationProvider", {
+                                      attrs: {
+                                        name: "Característica",
+                                        rules: "required"
+                                      },
+                                      scopedSlots: _vm._u(
+                                        [
+                                          {
+                                            key: "default",
+                                            fn: function(ref) {
+                                              var errors = ref.errors
+                                              var valid = ref.valid
+                                              return [
+                                                _c("v-text-field", {
+                                                  attrs: {
+                                                    label: "Característica",
+                                                    "error-messages": errors,
+                                                    success: valid
+                                                  },
+                                                  model: {
+                                                    value: _vm.form.feature,
+                                                    callback: function($$v) {
+                                                      _vm.$set(
+                                                        _vm.form,
+                                                        "feature",
+                                                        $$v
+                                                      )
+                                                    },
+                                                    expression: "form.feature"
+                                                  }
+                                                })
+                                              ]
+                                            }
+                                          }
+                                        ],
+                                        null,
+                                        true
+                                      )
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-card-actions",
+                                      [
+                                        _c(
+                                          "v-btn",
+                                          {
+                                            attrs: {
+                                              color: "primary",
+                                              type: "submit"
+                                            }
+                                          },
+                                          [_vm._v("Guardar")]
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            }
+                          }
+                        ])
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3b0e4185", module.exports)
+  }
+}
+
+/***/ }),
+/* 161 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-row",
+    [
+      _c("v-col", [
+        _c("div", { staticClass: "display-1", attrs: { md: 12 } }, [
+          _vm._v("\n        Paquetes\n    ")
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "v-col",
+        { attrs: { md: 12 } },
+        [
+          _c("v-hover", {
+            scopedSlots: _vm._u([
+              {
+                key: "default",
+                fn: function(ref) {
+                  var hover = ref.hover
+                  return [
+                    _c(
+                      "v-card",
+                      { attrs: { elevation: hover ? 24 : 6 } },
+                      [
+                        _c("v-simple-table", {
+                          scopedSlots: _vm._u(
+                            [
+                              {
+                                key: "default",
+                                fn: function() {
+                                  return [
+                                    _c("thead", [
+                                      _c("tr", [
+                                        _c("th", { staticClass: "text-left" }, [
+                                          _vm._v("Nombre")
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("th", { staticClass: "text-left" }, [
+                                          _vm._v("Precio")
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("th", { staticClass: "text-left" }, [
+                                          _vm._v("Nota")
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("th", { staticClass: "text-left" }, [
+                                          _vm._v("Premium")
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("th", { staticClass: "text-left" }, [
+                                          _vm._v("Mostrar")
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("th", { staticClass: "text-left" }, [
+                                          _vm._v("Opciones")
+                                        ])
+                                      ])
+                                    ]),
+                                    _vm._v(" "),
+                                    _c(
+                                      "tbody",
+                                      _vm._l(_vm.packages, function(
+                                        itemPackage
+                                      ) {
+                                        return _c(
+                                          "tr",
+                                          { key: itemPackage.id },
+                                          [
+                                            _c("td", [
+                                              _vm._v(_vm._s(itemPackage.name))
+                                            ]),
+                                            _vm._v(" "),
+                                            _c("td", [
+                                              _vm._v(_vm._s(itemPackage.amount))
+                                            ]),
+                                            _vm._v(" "),
+                                            _c("td", [
+                                              _vm._v(_vm._s(itemPackage.note))
+                                            ]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "td",
+                                              [
+                                                _c(
+                                                  "v-icon",
+                                                  {
+                                                    attrs: {
+                                                      color:
+                                                        itemPackage.premium == 1
+                                                          ? "green"
+                                                          : "red"
+                                                    }
+                                                  },
+                                                  [_vm._v("fas fa-check")]
+                                                )
+                                              ],
+                                              1
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "td",
+                                              [
+                                                _c(
+                                                  "v-icon",
+                                                  {
+                                                    attrs: {
+                                                      color:
+                                                        itemPackage.active == 1
+                                                          ? "green"
+                                                          : "red"
+                                                    }
+                                                  },
+                                                  [_vm._v("fas fa-check")]
+                                                )
+                                              ],
+                                              1
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "td",
+                                              [
+                                                _c(
+                                                  "v-btn",
+                                                  {
+                                                    attrs: { icon: "" },
+                                                    on: {
+                                                      click: function($event) {
+                                                        return _vm.edit(
+                                                          itemPackage.id,
+                                                          itemPackage.name,
+                                                          itemPackage.amount,
+                                                          itemPackage.note,
+                                                          itemPackage.premium,
+                                                          itemPackage.active
+                                                        )
+                                                      }
+                                                    }
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "v-icon",
+                                                      {
+                                                        attrs: {
+                                                          color: "orange"
+                                                        }
+                                                      },
+                                                      [_vm._v("fas fa-edit")]
+                                                    )
+                                                  ],
+                                                  1
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-btn",
+                                                  {
+                                                    attrs: { icon: "" },
+                                                    on: {
+                                                      click: function($event) {
+                                                        return _vm.openDialog(
+                                                          itemPackage.id,
+                                                          itemPackage.name,
+                                                          itemPackage.details_package
+                                                        )
+                                                      }
+                                                    }
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "v-icon",
+                                                      {
+                                                        attrs: {
+                                                          color: "primary"
+                                                        }
+                                                      },
+                                                      [_vm._v("fas fa-list")]
+                                                    )
+                                                  ],
+                                                  1
+                                                )
+                                              ],
+                                              1
+                                            )
+                                          ]
+                                        )
+                                      }),
+                                      0
+                                    )
+                                  ]
+                                },
+                                proxy: true
+                              }
+                            ],
+                            null,
+                            true
+                          )
+                        })
+                      ],
+                      1
+                    )
+                  ]
+                }
+              }
+            ])
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-col",
+        { attrs: { md: 6 } },
+        [
+          _c("v-hover", {
+            scopedSlots: _vm._u([
+              {
+                key: "default",
+                fn: function(ref) {
+                  var hover = ref.hover
+                  return [
+                    _c(
+                      "v-card",
+                      { attrs: { elevation: hover ? 24 : 6 } },
+                      [
+                        _c("v-card-title", [
+                          _c("h3", [_vm._v("Crear Paquete")])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "v-container",
+                          [
+                            _c("ValidationObserver", {
+                              ref: "obs",
+                              scopedSlots: _vm._u(
+                                [
+                                  {
+                                    key: "default",
+                                    fn: function(ref) {
+                                      var handleSubmit = ref.handleSubmit
+                                      return [
+                                        _c(
+                                          "form",
+                                          {
+                                            ref: "form",
+                                            on: {
+                                              submit: function($event) {
+                                                $event.preventDefault()
+                                                return handleSubmit(_vm.store)
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("ValidationProvider", {
+                                              attrs: {
+                                                name: "Nombre",
+                                                rules: "required"
+                                              },
+                                              scopedSlots: _vm._u(
+                                                [
+                                                  {
+                                                    key: "default",
+                                                    fn: function(ref) {
+                                                      var errors = ref.errors
+                                                      var valid = ref.valid
+                                                      return [
+                                                        _c("v-text-field", {
+                                                          attrs: {
+                                                            label: "Nombre",
+                                                            "error-messages": errors,
+                                                            success: valid
+                                                          },
+                                                          model: {
+                                                            value:
+                                                              _vm.form.name,
+                                                            callback: function(
+                                                              $$v
+                                                            ) {
+                                                              _vm.$set(
+                                                                _vm.form,
+                                                                "name",
+                                                                $$v
+                                                              )
+                                                            },
+                                                            expression:
+                                                              "form.name"
+                                                          }
+                                                        })
+                                                      ]
+                                                    }
+                                                  }
+                                                ],
+                                                null,
+                                                true
+                                              )
+                                            }),
+                                            _vm._v(" "),
+                                            _c("ValidationProvider", {
+                                              attrs: {
+                                                name: "Precio",
+                                                rules: ""
+                                              },
+                                              scopedSlots: _vm._u(
+                                                [
+                                                  {
+                                                    key: "default",
+                                                    fn: function(ref) {
+                                                      var errors = ref.errors
+                                                      var valid = ref.valid
+                                                      return [
+                                                        _c("v-text-field", {
+                                                          attrs: {
+                                                            label: "Precio",
+                                                            "error-messages": errors,
+                                                            success: valid
+                                                          },
+                                                          model: {
+                                                            value:
+                                                              _vm.form.amount,
+                                                            callback: function(
+                                                              $$v
+                                                            ) {
+                                                              _vm.$set(
+                                                                _vm.form,
+                                                                "amount",
+                                                                $$v
+                                                              )
+                                                            },
+                                                            expression:
+                                                              "form.amount"
+                                                          }
+                                                        })
+                                                      ]
+                                                    }
+                                                  }
+                                                ],
+                                                null,
+                                                true
+                                              )
+                                            }),
+                                            _vm._v(" "),
+                                            _c("ValidationProvider", {
+                                              attrs: {
+                                                name: "Nota",
+                                                rules: ""
+                                              },
+                                              scopedSlots: _vm._u(
+                                                [
+                                                  {
+                                                    key: "default",
+                                                    fn: function(ref) {
+                                                      var errors = ref.errors
+                                                      var valid = ref.valid
+                                                      return [
+                                                        _c("v-textarea", {
+                                                          attrs: {
+                                                            label: "Nota",
+                                                            "no-resize": true,
+                                                            "error-messages": errors,
+                                                            success: valid
+                                                          },
+                                                          model: {
+                                                            value:
+                                                              _vm.form.note,
+                                                            callback: function(
+                                                              $$v
+                                                            ) {
+                                                              _vm.$set(
+                                                                _vm.form,
+                                                                "note",
+                                                                $$v
+                                                              )
+                                                            },
+                                                            expression:
+                                                              "form.note"
+                                                          }
+                                                        })
+                                                      ]
+                                                    }
+                                                  }
+                                                ],
+                                                null,
+                                                true
+                                              )
+                                            }),
+                                            _vm._v(" "),
+                                            _c("v-switch", {
+                                              attrs: {
+                                                label: "Paquete Premium"
+                                              },
+                                              model: {
+                                                value: _vm.form.premium,
+                                                callback: function($$v) {
+                                                  _vm.$set(
+                                                    _vm.form,
+                                                    "premium",
+                                                    $$v
+                                                  )
+                                                },
+                                                expression: "form.premium"
+                                              }
+                                            }),
+                                            _vm._v(" "),
+                                            _c("v-switch", {
+                                              attrs: { label: "Mostar" },
+                                              model: {
+                                                value: _vm.form.active,
+                                                callback: function($$v) {
+                                                  _vm.$set(
+                                                    _vm.form,
+                                                    "active",
+                                                    $$v
+                                                  )
+                                                },
+                                                expression: "form.active"
+                                              }
+                                            }),
+                                            _vm._v(" "),
+                                            _c(
+                                              "v-card-actions",
+                                              [
+                                                _c(
+                                                  "v-btn",
+                                                  {
+                                                    attrs: {
+                                                      color: "primary",
+                                                      type: "submit"
+                                                    }
+                                                  },
+                                                  [_vm._v("Guardar")]
+                                                ),
+                                                _vm._v(" "),
+                                                _c("v-btn", [_vm._v("Limpiar")])
+                                              ],
+                                              1
+                                            )
+                                          ],
+                                          1
+                                        )
+                                      ]
+                                    }
+                                  }
+                                ],
+                                null,
+                                true
+                              )
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                }
+              }
+            ])
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _vm.myShowForm
+        ? _c(
+            "v-col",
+            { attrs: { md: 6 } },
+            [
+              _c("v-hover", {
+                scopedSlots: _vm._u(
+                  [
+                    {
+                      key: "default",
+                      fn: function(ref) {
+                        var hover = ref.hover
+                        return [
+                          _c(
+                            "v-card",
+                            { attrs: { dark: "", elevation: hover ? 24 : 6 } },
+                            [
+                              _c("v-card-title", [
+                                _c("h3", [_vm._v("Editar Paquete")])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "v-container",
+                                [
+                                  _c("ValidationObserver", {
+                                    ref: "obs",
+                                    scopedSlots: _vm._u(
+                                      [
+                                        {
+                                          key: "default",
+                                          fn: function(ref) {
+                                            var handleSubmit = ref.handleSubmit
+                                            return [
+                                              _c(
+                                                "form",
+                                                {
+                                                  ref: "form",
+                                                  on: {
+                                                    submit: function($event) {
+                                                      $event.preventDefault()
+                                                      return handleSubmit(
+                                                        _vm.update
+                                                      )
+                                                    }
+                                                  }
+                                                },
+                                                [
+                                                  _c("ValidationProvider", {
+                                                    attrs: {
+                                                      name: "Nombre",
+                                                      rules: "required"
+                                                    },
+                                                    scopedSlots: _vm._u(
+                                                      [
+                                                        {
+                                                          key: "default",
+                                                          fn: function(ref) {
+                                                            var errors =
+                                                              ref.errors
+                                                            var valid =
+                                                              ref.valid
+                                                            return [
+                                                              _c(
+                                                                "v-text-field",
+                                                                {
+                                                                  attrs: {
+                                                                    label:
+                                                                      "Nombre",
+                                                                    "error-messages": errors,
+                                                                    success: valid
+                                                                  },
+                                                                  model: {
+                                                                    value:
+                                                                      _vm
+                                                                        .formEdit
+                                                                        .name,
+                                                                    callback: function(
+                                                                      $$v
+                                                                    ) {
+                                                                      _vm.$set(
+                                                                        _vm.formEdit,
+                                                                        "name",
+                                                                        $$v
+                                                                      )
+                                                                    },
+                                                                    expression:
+                                                                      "formEdit.name"
+                                                                  }
+                                                                }
+                                                              )
+                                                            ]
+                                                          }
+                                                        }
+                                                      ],
+                                                      null,
+                                                      true
+                                                    )
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _c("ValidationProvider", {
+                                                    attrs: {
+                                                      name: "Precio",
+                                                      rules: ""
+                                                    },
+                                                    scopedSlots: _vm._u(
+                                                      [
+                                                        {
+                                                          key: "default",
+                                                          fn: function(ref) {
+                                                            var errors =
+                                                              ref.errors
+                                                            var valid =
+                                                              ref.valid
+                                                            return [
+                                                              _c(
+                                                                "v-text-field",
+                                                                {
+                                                                  attrs: {
+                                                                    label:
+                                                                      "Precio",
+                                                                    "error-messages": errors,
+                                                                    success: valid
+                                                                  },
+                                                                  model: {
+                                                                    value:
+                                                                      _vm
+                                                                        .formEdit
+                                                                        .amount,
+                                                                    callback: function(
+                                                                      $$v
+                                                                    ) {
+                                                                      _vm.$set(
+                                                                        _vm.formEdit,
+                                                                        "amount",
+                                                                        $$v
+                                                                      )
+                                                                    },
+                                                                    expression:
+                                                                      "formEdit.amount"
+                                                                  }
+                                                                }
+                                                              )
+                                                            ]
+                                                          }
+                                                        }
+                                                      ],
+                                                      null,
+                                                      true
+                                                    )
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _c("ValidationProvider", {
+                                                    attrs: {
+                                                      name: "Nota",
+                                                      rules: ""
+                                                    },
+                                                    scopedSlots: _vm._u(
+                                                      [
+                                                        {
+                                                          key: "default",
+                                                          fn: function(ref) {
+                                                            var errors =
+                                                              ref.errors
+                                                            var valid =
+                                                              ref.valid
+                                                            return [
+                                                              _c("v-textarea", {
+                                                                attrs: {
+                                                                  label: "Nota",
+                                                                  "no-resize": true,
+                                                                  "error-messages": errors,
+                                                                  success: valid
+                                                                },
+                                                                model: {
+                                                                  value:
+                                                                    _vm.formEdit
+                                                                      .note,
+                                                                  callback: function(
+                                                                    $$v
+                                                                  ) {
+                                                                    _vm.$set(
+                                                                      _vm.formEdit,
+                                                                      "note",
+                                                                      $$v
+                                                                    )
+                                                                  },
+                                                                  expression:
+                                                                    "formEdit.note"
+                                                                }
+                                                              })
+                                                            ]
+                                                          }
+                                                        }
+                                                      ],
+                                                      null,
+                                                      true
+                                                    )
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _c("v-switch", {
+                                                    attrs: {
+                                                      label: "Paquete Premium"
+                                                    },
+                                                    model: {
+                                                      value:
+                                                        _vm.formEdit.premium,
+                                                      callback: function($$v) {
+                                                        _vm.$set(
+                                                          _vm.formEdit,
+                                                          "premium",
+                                                          $$v
+                                                        )
+                                                      },
+                                                      expression:
+                                                        "formEdit.premium"
+                                                    }
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _c("v-switch", {
+                                                    attrs: { label: "Mostrar" },
+                                                    model: {
+                                                      value:
+                                                        _vm.formEdit.active,
+                                                      callback: function($$v) {
+                                                        _vm.$set(
+                                                          _vm.formEdit,
+                                                          "active",
+                                                          $$v
+                                                        )
+                                                      },
+                                                      expression:
+                                                        "formEdit.active"
+                                                    }
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "v-card-actions",
+                                                    [
+                                                      _c(
+                                                        "v-btn",
+                                                        {
+                                                          attrs: {
+                                                            color: "primary",
+                                                            type: "submit"
+                                                          }
+                                                        },
+                                                        [_vm._v("Editar")]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "v-btn",
+                                                        {
+                                                          attrs: { dark: "" },
+                                                          on: {
+                                                            click: function(
+                                                              $event
+                                                            ) {
+                                                              return _vm.showForm(
+                                                                false
+                                                              )
+                                                            }
+                                                          }
+                                                        },
+                                                        [_vm._v("Cerrar")]
+                                                      )
+                                                    ],
+                                                    1
+                                                  )
+                                                ],
+                                                1
+                                              )
+                                            ]
+                                          }
+                                        }
+                                      ],
+                                      null,
+                                      true
+                                    )
+                                  })
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ]
+                      }
+                    }
+                  ],
+                  null,
+                  false,
+                  3914439926
+                )
+              })
+            ],
+            1
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _c(
+        "v-snackbar",
+        {
+          attrs: { color: _vm.typeSnack, timeout: 3000 },
+          model: {
+            value: _vm.showSnackBar,
+            callback: function($$v) {
+              _vm.showSnackBar = $$v
+            },
+            expression: "showSnackBar"
+          }
+        },
+        [
+          _vm._v("\n      " + _vm._s(_vm.textSnack) + "\n      "),
+          _c(
+            "v-btn",
+            {
+              attrs: { color: "black", text: "" },
+              on: {
+                click: function($event) {
+                  _vm.showSnackBar = false
+                }
+              }
+            },
+            [_vm._v("\n      Cerrar\n      ")]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("detail-packAge", {
+        attrs: {
+          myShowDialog: _vm.showDialog,
+          myIdPackAge: _vm.infoDetailsPackage.id,
+          myNamePackAge: _vm.infoDetailsPackage.name,
+          myDetails: _vm.infoDetailsPackage.details
+        },
+        on: {
+          close: function($event) {
+            _vm.showDialog = false
+          }
+        }
+      })
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -84535,19 +86159,19 @@ if (false) {
 }
 
 /***/ }),
-/* 157 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(158)
+  __webpack_require__(163)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(160)
+var __vue_script__ = __webpack_require__(165)
 /* template */
-var __vue_template__ = __webpack_require__(161)
+var __vue_template__ = __webpack_require__(166)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -84586,13 +86210,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 158 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(159);
+var content = __webpack_require__(164);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -84612,7 +86236,7 @@ if(false) {
 }
 
 /***/ }),
-/* 159 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -84626,7 +86250,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-/* 160 */
+/* 165 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -84639,7 +86263,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
-/* 161 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -84659,19 +86283,19 @@ if (false) {
 }
 
 /***/ }),
-/* 162 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(163)
+  __webpack_require__(168)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(165)
+var __vue_script__ = __webpack_require__(170)
 /* template */
-var __vue_template__ = __webpack_require__(166)
+var __vue_template__ = __webpack_require__(171)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -84710,13 +86334,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 163 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(164);
+var content = __webpack_require__(169);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -84736,7 +86360,7 @@ if(false) {
 }
 
 /***/ }),
-/* 164 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -84750,7 +86374,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 165 */
+/* 170 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85022,7 +86646,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 166 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -85634,7 +87258,7 @@ if (false) {
 }
 
 /***/ }),
-/* 167 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -85885,7 +87509,7 @@ if (false) {
 }
 
 /***/ }),
-/* 168 */
+/* 173 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

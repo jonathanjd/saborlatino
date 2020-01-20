@@ -47,7 +47,8 @@ class DetailPackageController extends Controller
         $detailPackage->save();
 
         return response()->json([
-            'msj' => 'success'
+            'msj' => 'success',
+            'detailpackage' => $detailPackage
         ], 200);
     }
 
