@@ -26,3 +26,5 @@ Route::group([
   });
 
   Route::resource('reviews', 'ReviewController');
+  Route::resource('packages', 'PackageController');
+  Route::resource('detailpackages', 'DetailPackageController');
