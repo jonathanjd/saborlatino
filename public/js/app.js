@@ -79992,7 +79992,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -80003,6 +80003,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", 
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -80085,6 +80086,26 @@ var render = function() {
                             }
                           },
                           [_vm._v("Piensa, cree, sueña y atrevéte.")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "headline",
+                            attrs: {
+                              "data-aos": "fade-right",
+                              "data-aos-delay": "200"
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "Sesión de coaching gratuita de 30 minutos "
+                            ),
+                            _c("v-btn", { attrs: { color: "success" } }, [
+                              _vm._v("Empezar")
+                            ])
+                          ],
+                          1
                         )
                       ])
                     ],
@@ -81211,7 +81232,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -81222,6 +81243,23 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -81345,7 +81383,7 @@ var render = function() {
       _c(
         "v-row",
         { attrs: { "data-aos": "zoom-in" } },
-        _vm._l(_vm.packages, function(item) {
+        _vm._l(_vm.packages, function(item, index) {
           return _c(
             "v-col",
             { key: item.id },
@@ -81369,12 +81407,41 @@ var render = function() {
                               }
                             },
                             [
-                              _c("v-img", {
-                                attrs: {
-                                  src: "/img/package.jpg",
-                                  height: "200px"
-                                }
-                              }),
+                              index == 0
+                                ? _c("v-img", {
+                                    attrs: {
+                                      src: "/img/package.jpg",
+                                      height: "200px"
+                                    }
+                                  })
+                                : _vm._e(),
+                              _vm._v(" "),
+                              index == 1
+                                ? _c("v-img", {
+                                    attrs: {
+                                      src: "/img/package1.jpg",
+                                      height: "200px"
+                                    }
+                                  })
+                                : _vm._e(),
+                              _vm._v(" "),
+                              index == 2
+                                ? _c("v-img", {
+                                    attrs: {
+                                      src: "/img/package2.jpg",
+                                      height: "200px"
+                                    }
+                                  })
+                                : _vm._e(),
+                              _vm._v(" "),
+                              index == 3
+                                ? _c("v-img", {
+                                    attrs: {
+                                      src: "/img/package3.jpg",
+                                      height: "200px"
+                                    }
+                                  })
+                                : _vm._e(),
                               _vm._v(" "),
                               _c("v-card-title", [
                                 _vm._v(
@@ -84115,9 +84182,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
 
   created: function created() {
-    // if (User.loggedIn() === false) {
-    //   this.$router.push({name: 'login'});
-    // }
+    if (User.loggedIn() === false) {
+      this.$router.push({ name: 'login' });
+    }
   },
 
 

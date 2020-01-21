@@ -6,7 +6,7 @@
           </v-col>
       </v-row>
       <v-row data-aos="zoom-in">
-          <v-col v-for="item in packages" :key="item.id">
+          <v-col v-for="(item, index) in packages" :key="item.id">
               <v-hover>
                   <template v-slot="{ hover }">
                     <v-card 
@@ -15,8 +15,25 @@
                         max-width="344"
                         :elevation="hover ? 24 : 6"
                     >
+
                         <v-img
+                        v-if="index == 0"
                         src="/img/package.jpg"
+                        height="200px"
+                        ></v-img>
+                        <v-img
+                        v-if="index == 1"
+                        src="/img/package1.jpg"
+                        height="200px"
+                        ></v-img>
+                        <v-img
+                        v-if="index == 2"
+                        src="/img/package2.jpg"
+                        height="200px"
+                        ></v-img>
+                        <v-img
+                        v-if="index == 3"
+                        src="/img/package3.jpg"
                         height="200px"
                         ></v-img>
 

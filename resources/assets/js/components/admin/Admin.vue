@@ -117,9 +117,9 @@
     }),
 
     created() {
-      // if (User.loggedIn() === false) {
-      //   this.$router.push({name: 'login'});
-      // }
+      if (User.loggedIn() === false) {
+        this.$router.push({name: 'login'});
+      }
     },
 
     methods: {

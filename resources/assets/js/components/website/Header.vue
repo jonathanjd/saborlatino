@@ -8,6 +8,7 @@
             <v-col>
               <div data-aos="fade-right" data-aos-delay="100" class="display-2">Pa' Lante Moving Forward Coaching</div>
               <div data-aos="fade-right" data-aos-delay="200" class="headline">Piensa, cree, sueña y atrevéte.</div>
+              <div data-aos="fade-right" data-aos-delay="200" class="headline">Sesión de coaching gratuita de 30 minutos <v-btn color="success">Empezar</v-btn></div>
             </v-col>
           </v-row>
         </v-parallax>
