@@ -65,6 +65,7 @@
                         <v-btn
                             color="primary"
                             :text="item.premium == 1 ? false : true"
+                            @click="linlBuyPackage(item.id)"
                         >
                             Comprar
                         </v-btn>
@@ -98,6 +99,13 @@ export default {
                 if (response.data.msj === 'success') {
                     this.packages = response.data.package;
                 }
+            });
+        },
+
+        linlBuyPackage(id) {
+            this.$router.push({
+                name: 'buy',
+                params: { 'packageId': id }
             });
         }
     }

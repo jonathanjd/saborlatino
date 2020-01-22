@@ -66,6 +66,11 @@ class PackageController extends Controller
     public function show($id)
     {
         //
+        $package = Package::with('detailsPackage')->where('id', $id)->first();
+        return response()->json([
+            'msj' => 'success',
+            'package' => $package
+        ], 200);
     }
 
     /**

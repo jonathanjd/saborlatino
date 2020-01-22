@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from '../components/website/Home'
+import PageBuy from '../components/website/PageBuy.vue'
 import Login from '../components/auth/Login'
 import Admin from '../components/admin/Admin'
 
@@ -22,6 +23,11 @@ const routes = [
       path: '/admin',
       name: 'admin',
       component: Admin,
+    },
+    {
+      path: '/buy-package/:packageId',
+      name: 'buy',
+      component: PageBuy,
     }
 ]
 
