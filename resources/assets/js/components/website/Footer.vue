@@ -20,7 +20,7 @@
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-            <strong> ©{{ new Date().getFullYear() }} by myCompany.com. Proudly created with <a href="http://emcomputersolutions.com/" target="_blank">E&M Computer Solutions</a> </strong>
+            <strong> ©{{ new Date().getFullYear() }} by paLante.com. Proudly created with <a href="http://emcomputersolutions.com/" target="_blank">E&M Computer Solutions</a> </strong>
         </v-card-text>
       </v-card>
     </v-footer>

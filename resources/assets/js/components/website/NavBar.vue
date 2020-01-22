@@ -6,10 +6,10 @@
       <v-spacer></v-spacer>
 
       <v-toolbar-items>
-        <v-btn text>Inicio</v-btn>
-        <v-btn text>Misión</v-btn>
-        <v-btn text>¿Quiénes somos?</v-btn>
-        <v-btn text>Paquetes</v-btn>
+        <v-btn @click="linkHome" text>Inicio</v-btn>
+        <v-btn @click="linkMission" text>Misión</v-btn>
+        <v-btn @click="linkAbout" text>¿Quiénes somos?</v-btn>
+        <v-btn @click="linkPackages" text>Paquetes</v-btn>
         <v-menu offset-y>
         <template v-slot:activator="{ on }">
           <v-btn
@@ -47,6 +47,31 @@ export default {
         // { title: 'Item4' },
       ],
     }),
+
+    methods: {
+
+      linkHome() {
+        this.$router.push({
+          name: 'home'
+        });
+      },
+      linkAbout() {
+        this.$router.push({
+          name: 'about'
+        });
+      },
+      linkMission() {
+        this.$router.push({
+          name: 'mission'
+        });
+      },
+      linkPackages() {
+        this.$router.push({
+          name: 'packages'
+        });
+      },
+
+    }
 }
 </script>
 

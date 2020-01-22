@@ -13,6 +13,7 @@
         <Team></Team>
         <Review></Review>
         <ContactUs></ContactUs>
+        <Chat></Chat>
         <Footer></Footer>
     </div>
 </template>
@@ -31,6 +32,7 @@ import Video from './Video';
 import Team from './Team';
 import Review from './Review';
 import ContactUs from './ContactUs';
+import Chat from './Chat';
 import Footer from './Footer';
 
 export default {
@@ -47,6 +49,7 @@ export default {
         Team,
         Review,
         ContactUs,
+        Chat,
         Footer
     }
 }

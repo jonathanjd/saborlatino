@@ -25,8 +25,8 @@
                             tile
                         >
                             <v-img
-                            height="100%"
-                            src="/img/team-bg-1.jpg"
+                            height="500"
+                            src="/img/equipo2.jpg"
                             >
                             <v-row
                                 align="end"
@@ -40,12 +40,14 @@
                                 </v-col>
                                 <v-col class="py-0">
                                 <v-list-item
-                                    color="rgba(0, 0, 0, .4)"
+                                    color="rgba(0, 0, 0, 0.9)"
                                     dark
+                                    style="background-color:rgba(0, 0, 0, 0.6)"
                                 >
                                     <v-list-item-content>
-                                    <v-list-item-title class="title">Ivette Llamas</v-list-item-title>
+                                    <v-list-item-title class="title">Sandy Raymond</v-list-item-title>
                                     <v-list-item-subtitle>Certified Professional Coach</v-list-item-subtitle>
+                                    Experiencia: eight-years as a therapist and also working with family
                                     </v-list-item-content>
                                 </v-list-item>
                                 </v-col>
@@ -58,8 +60,8 @@
                             tile
                         >
                             <v-img
-                            height="100%"
-                            src="/img/team-bg-2.jpg"
+                            height="500"
+                            src="/img/equipo1.jpg"
                             >
                             <v-row
                                 align="end"
@@ -75,6 +77,7 @@
                                 <v-list-item
                                     color="rgba(0, 0, 0, .4)"
                                     dark
+                                    style="background-color:rgba(0, 0, 0, 0.6)"
                                 >
                                     <v-list-item-content>
                                     <v-list-item-title class="title">Marcus Obrien</v-list-item-title>
