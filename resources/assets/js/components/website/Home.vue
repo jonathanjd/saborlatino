@@ -13,8 +13,8 @@
         <Team></Team>
         <Review></Review>
         <ContactUs></ContactUs>
-        <Chat></Chat>
         <Footer></Footer>
+        <ChatLive></ChatLive>
     </div>
 </template>
 
@@ -34,6 +34,7 @@ import Review from './Review';
 import ContactUs from './ContactUs';
 import Chat from './Chat';
 import Footer from './Footer';
+import ChatLive from './ChatLive';
 
 export default {
     components: {
@@ -49,8 +50,8 @@ export default {
         Team,
         Review,
         ContactUs,
-        Chat,
-        Footer
+        Footer,
+        ChatLive
     }
 }
 </script>
