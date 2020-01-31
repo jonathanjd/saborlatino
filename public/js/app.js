@@ -85224,7 +85224,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -85239,6 +85239,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__InfoTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__InfoTop__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__NavBar__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -85292,13 +85303,48 @@ var render = function() {
                 { attrs: { md: "12" } },
                 [
                   _c("h3", { staticClass: "display-1 text-md-center pa-5" }, [
-                    _vm._v(" Section Mission - En Desarrollo ")
+                    _vm._v(" Misión")
                   ]),
                   _vm._v(" "),
                   _c("v-divider")
                 ],
                 1
               )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-row",
+            [
+              _c(
+                "v-col",
+                { attrs: { md: "6" } },
+                [
+                  _c("v-img", {
+                    attrs: {
+                      height: "100%",
+                      width: "100%",
+                      src: "/img/mision-bg.jpg"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("v-col", { attrs: { md: "6" } }, [
+                _c("p", { staticClass: "text-justify" }, [
+                  _vm._v(
+                    "Yo, Sandra A. Raymond, utiliza formas únicas para ayudar a mis clientes a identificar qué cambios desean explorar. Creo que el crecimiento proviene de tener el coraje de enfrentar su verdad y desafiar las circunstancias en un espacio seguro y de apoyo. Mi enfoque es un enfoque humanista genuino, y animo a los clientes la oportunidad de aprovechar sus ideas a través de la reorientación individual. Mi rol de entrenador funciona como una guía de apoyo, que permite a los clientes encontrar formas de pensar de manera diferente con el crecimiento interno de la individualidad. Mi enfoque principal de Coaching es entender y escuchar a mis clientes y encontrar formas de comenzar un nuevo capítulo en sus vidas a través de una plataforma de autoconciencia. Quiero trabajar con mis clientes, en colaboración hacia el empoderamiento, la paz y la armonía."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "text-justify" }, [
+                  _vm._v(
+                    "\n                    Creo que el crecimiento proviene de tener el coraje de enfrentar su verdad y desafiar las circunstancias en un espacio seguro y de apoyo. Mi enfoque es un enfoque humanista genuino, y animo a los clientes la oportunidad de aprovechar sus ideas a través de la reorientación individual. Mi rol de entrenador funciona como una guía de apoyo, que permite a los clientes encontrar formas de pensar de manera diferente con el crecimiento interno de la individualidad. Mi enfoque principal de Coaching es entender y escuchar a mis clientes y encontrar formas de comenzar un nuevo capítulo en sus vidas a través de una plataforma de autoconciencia. Quiero trabajar con mis clientes, en colaboración hacia el empoderamiento, la paz y la armonía.\n                "
+                  )
+                ])
+              ])
             ],
             1
           )
