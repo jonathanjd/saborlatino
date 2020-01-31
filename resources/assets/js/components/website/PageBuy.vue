@@ -5,7 +5,7 @@
         <v-container>
             <v-row>
                 <v-col md="12">
-                    <h3 class="display-1 text-md-center pa-5"><v-icon large>far fa-credit-card</v-icon> Comprar Paquete <v-icon large>fas fa-box-open</v-icon></h3>
+                    <h3 class="display-1 text-md-center pa-5"><v-icon large>far fa-credit-card</v-icon> Comprar Service <v-icon large>fas fa-box-open</v-icon></h3>
                     <v-divider></v-divider>
                 </v-col>
                 <v-col md="6" style="background-color:#FFEB3B">

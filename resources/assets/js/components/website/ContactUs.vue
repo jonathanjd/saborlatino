@@ -2,9 +2,9 @@
   <v-container>
     <v-row>
       <v-col>
-        <h3 data-aos="zoom-in" class="display-2 text-center py-2 font-italic font-weight-medium">Contáctanos</h3>
-        <p data-aos="fade-right" data-aos-delay="100" class="text-center">palanteMovingForwardCoaching@gmail.com</p>
-        <p data-aos="fade-right" data-aos-delay="150" class="text-center">954.559.7492</p>
+        <h3 data-aos="zoom-in" class="display-2 text-center py-2 font-italic font-weight-medium">{{ myCurrentLanguage ? 'Contact US' : 'Contáctenos' }}</h3>
+        <p data-aos="fade-right" data-aos-delay="100" class="text-center">coaching2424@gmail.com</p>
+        <p data-aos="fade-right" data-aos-delay="150" class="text-center">786-326-6522</p>
         <p class="text-center">
           <v-btn icon>
             <v-icon>fab fa-facebook-f</v-icon>
@@ -21,7 +21,7 @@
                 md="6"
               >
                 <v-text-field
-                  label="Nombre *"
+                  :label="myCurrentLanguage ? 'Name *' : 'Nombre *'"
                   required
                   color="yellow accent-4"
                 ></v-text-field>
@@ -32,7 +32,7 @@
                 md="6"
               >
                 <v-text-field
-                  label="Email *"
+                  :label="myCurrentLanguage ? 'Email *' : 'Correo *'"
                   required
                   color="yellow accent-4"
                 ></v-text-field>
@@ -40,16 +40,16 @@
 
               <v-col cols="12" md="12">
                 <v-textarea
-                  label="Mensaje *"
+                  :label="myCurrentLanguage ? 'Message' : 'Mensaje *'"
                   value=""
-                  hint="Escribe tu mensaje"
+                  :hint="myCurrentLanguage ? 'Write your message' : 'Escribe tu mensaje'"
                   color="yellow accent-4"
                   no-resize
                 ></v-textarea>
               </v-col>
               <div class="text-center">
                 <v-btn @click="snackbar = true" primary>
-                  Enviar
+                  {{ myCurrentLanguage ? 'Send' : 'Enviar' }}
                 </v-btn>
               </div>
             </v-row>
@@ -60,13 +60,13 @@
           color="success"
           :timeout="3000"
         >
-          Mensaje enviado con éxito!
+          {{ myCurrentLanguage ? 'Message sent succesfully!' : 'Mensaje enviado con éxito!' }}
           <v-btn
             color="black"
             text
             @click="snackbar = false"
           >
-            Cerrar
+            {{ myCurrentLanguage ? 'Close' : 'Cerrar'}}
           </v-btn>
         </v-snackbar>
       </v-col>
@@ -81,7 +81,13 @@ export default {
     return {
       snackbar: false,
     }
-  }
+  },
+
+  computed: {
+    myCurrentLanguage() {
+        return this.$store.getters.getLanguage;
+    }
+  },
 
 }
 </script>

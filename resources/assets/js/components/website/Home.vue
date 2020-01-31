@@ -10,11 +10,24 @@
         <Packages></Packages>
         <Question></Question>
         <Video></Video>
-        <Team></Team>
         <Review></Review>
         <ContactUs></ContactUs>
         <Footer></Footer>
         <ChatLive></ChatLive>
+        <v-snackbar
+          v-model="snackbar"
+          color="default"
+          :timeout="10000"
+        >
+          Language: <v-chip @click.prevent="changeLanguage('English')" class="ma-2" color="primary">English</v-chip> / <v-chip @click.prevent="changeLanguage('Spanish')" class="ma-2" color="red">Spanish</v-chip>
+          <v-btn
+            color="white"
+            text
+            @click="snackbar = false"
+          >
+            {{ myCurrentLanguage ? 'Close' : 'Cerrar'}}
+          </v-btn>
+        </v-snackbar>
     </div>
 </template>
 
@@ -37,6 +50,27 @@ import Footer from './Footer';
 import ChatLive from './ChatLive';
 
 export default {
+
+    data() {
+        return {
+            snackbar: true
+        }
+    },
+
+    methods: {
+
+        changeLanguage(type) {
+
+            let value = this.$store.getters.getLanguage;
+            if (type === 'Spanish') {
+                this.$store.dispatch('actionLanguage', false);
+            } else {
+                this.$store.dispatch('actionLanguage', true);
+            }
+
+      }
+    },
+
     components: {
         InfoTop,
         NavBar,

@@ -76,8 +76,8 @@ export default {
   methods: {
 
     login(){
-        User.login(this.formLogin);
         this.$router.push({name: 'admin'});
+        User.login(this.formLogin);
       },
 
   }

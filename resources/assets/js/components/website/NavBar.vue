@@ -6,10 +6,11 @@
       <v-spacer></v-spacer>
 
       <v-toolbar-items>
-        <v-btn @click="linkHome" text>Inicio</v-btn>
-        <v-btn @click="linkMission" text>Misión</v-btn>
-        <v-btn @click="linkAbout" text>¿Quiénes somos?</v-btn>
-        <v-btn @click="linkPackages" text>Paquetes</v-btn>
+        <v-btn @click="linkHome" text>{{ myCurrentLanguage ? 'Home': 'Inicio' }}</v-btn>
+        <v-btn @click="linkMission" text>{{ myCurrentLanguage ? 'Mission' : 'Misión' }}</v-btn>
+        <v-btn @click="linkAbout" text>{{ myCurrentLanguage ? 'About us' : '¿Quiénes Somos?' }}</v-btn>
+        <v-btn @click="linkPackages" text>{{ myCurrentLanguage ? 'Services' : 'Servicios' }}</v-btn>
+        <v-btn @click="linkOnlineService" text>{{ myCurrentLanguage ? 'Online Service' : 'Servicio en Línea' }}</v-btn>
         <v-menu offset-y>
         <template v-slot:activator="{ on }">
           <v-btn
@@ -17,14 +18,14 @@
             dark
             v-on="on"
           >
-            Más
+            Language
           </v-btn>
         </template>
         <v-list>
           <v-list-item
             v-for="(item, index) in items"
             :key="index"
-            @click=""
+            @click="changeLanguage(item.title)"
           >
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
@@ -37,16 +38,25 @@
 </template>
 
 <script>
+
 export default {
 
   data: () => ({
       items: [
-        // { title: 'Item1' },
-        // { title: 'Item2' },
+        { title: 'Spanish' },
+        { title: 'English' },
         // { title: 'Item3' },
         // { title: 'Item4' },
       ],
     }),
+
+    computed: {
+
+      myCurrentLanguage() {
+        return this.$store.getters.getLanguage;
+      }
+
+    },
 
     methods: {
 
@@ -70,6 +80,22 @@ export default {
           name: 'packages'
         });
       },
+      linkOnlineService() {
+        this.$router.push({
+          name: 'onlineService'
+        });
+      },
+
+      changeLanguage(type) {
+
+        let value = this.$store.getters.getLanguage;
+        if (type === 'Spanish') {
+          this.$store.dispatch('actionLanguage', false);
+        } else {
+          this.$store.dispatch('actionLanguage', true);
+        }
+
+      }
 
     }
 }

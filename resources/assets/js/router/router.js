@@ -6,6 +6,7 @@ import PageBuy from '../components/website/PageBuy'
 import PagePackages from '../components/website/PagePackage.vue'
 import PageAbout from '../components/website/PageAbout'
 import PageMission from '../components/website/PageMission'
+import PageOnlineService from '../components/website/PageOnlineService'
 import Login from '../components/auth/Login'
 import Admin from '../components/admin/Admin'
 
@@ -46,6 +47,11 @@ const routes = [
       path: '/package',
       name: 'packages',
       component: PagePackages,
+    },
+    {
+      path: '/online-service',
+      name: 'onlineService',
+      component: PageOnlineService,
     },
 ]
 

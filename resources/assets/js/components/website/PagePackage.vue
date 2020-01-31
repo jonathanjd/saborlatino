@@ -5,7 +5,7 @@
         <v-container>
             <v-row>
                 <v-col md="12">
-                    <h3 class="display-1 text-md-center pa-5"> Paquetes</h3>
+                    <h3 class="display-1 text-md-center pa-5">{{ myCurrentLanguage ? 'Services' : 'Servicios'  }} </h3>
                     <v-divider></v-divider>
                 </v-col>
             </v-row>
@@ -22,7 +22,7 @@
 
                                 <v-img
                                 v-if="index == 0"
-                                src="/img/package.jpg"
+                                src="/img/service-individual.jpg"
                                 height="200px"
                                 ></v-img>
                                 <v-img
@@ -64,14 +64,14 @@
                                 <v-card-actions class="justify-center">
                                 <v-btn
                                     :text="item.premium == 1 ? false : true"
-                                >Compartir</v-btn>
+                                >{{ myCurrentLanguage ? 'Add To Cart' : 'Añadir al carrito'}}</v-btn>
 
                                 <v-btn
                                     color="primary"
                                     :text="item.premium == 1 ? false : true"
                                     @click="linlBuyPackage(item.id)"
                                 >
-                                    Comprar
+                                    {{ myCurrentLanguage ? 'Contact US' : 'Contáctenos' }}
                                 </v-btn>
                                 </v-card-actions>
                             </v-card>
@@ -100,6 +100,12 @@ export default {
 
     created() {
         this.fetchPackages();
+    },
+
+    computed: {
+        myCurrentLanguage() {
+            return this.$store.getters.getLanguage;
+        }
     },
 
     methods: {

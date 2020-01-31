@@ -8,6 +8,7 @@
 require('./bootstrap');
 window.Vue = require('vue');
 import Vue from 'vue'
+import { store } from './vuex/store/store.js'
 import Vuetify from 'vuetify'
 import App from './components/base/App.vue'
 import AOS from "aos"
@@ -24,6 +25,8 @@ extend('min', min);
 Vue.component('ValidationProvider', ValidationProvider)
 Vue.component('ValidationObserver', ValidationObserver)
 Vue.use(Vuetify);
+
+
 
 export default new Vuetify({
     icons: {
@@ -48,6 +51,7 @@ const app = new Vue({
     },
     el: '#app',
     router,
+    store,
     components: { App },
     vuetify : new Vuetify(),
 });

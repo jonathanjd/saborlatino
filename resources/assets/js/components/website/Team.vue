@@ -2,7 +2,7 @@
   <v-container>
       <v-row>
           <v-col>
-            <h3 data-aos="zoom-in" class="display-2 text-center py-2 font-italic font-weight-medium">Equipo</h3>
+            <h3 data-aos="zoom-in" class="display-2 text-center py-2 font-italic font-weight-medium">Team</h3>
             <v-carousel height="600" cycle hide-delimiters>
                 <v-carousel-item
                 v-for="(color, i) in colors"

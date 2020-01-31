@@ -2,7 +2,7 @@
     <v-expansion-panels :popout="true" :hover="true" style="position: fixed;bottom: 100px; width: 20%; right:0;">
     <v-expansion-panel>
         <v-expansion-panel-header>
-            Chat en Vivo
+            {{ myCurrentLanguage ? 'Live Chat' : 'Chat en Vivo' }}
         </v-expansion-panel-header>
         <v-expansion-panel-content>
                 <v-list three-line style="max-height: 350px" class="overflow-y-auto">
@@ -83,6 +83,9 @@ export default {
     computed: {
         myReverseChat () {
             return this.items;
+        },
+        myCurrentLanguage() {
+            return this.$store.getters.getLanguage;
         }
     },
 

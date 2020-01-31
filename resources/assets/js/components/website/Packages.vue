@@ -2,7 +2,7 @@
   <v-container class="box-bg-grey" fluid>
       <v-row>
           <v-col>
-              <h3 data-aos="zoom-in" class="display-2 text-center py-2 font-italic font-weight-medium">Paquetes</h3>
+              <h3 data-aos="zoom-in" class="display-2 text-center py-2 font-italic font-weight-medium">{{ myCurrentLanguage ? 'Services' : 'Servicios'}}</h3>
           </v-col>
       </v-row>
       <v-row data-aos="zoom-in">
@@ -18,7 +18,7 @@
 
                         <v-img
                         v-if="index == 0"
-                        src="/img/package.jpg"
+                        src="/img/service-individual.jpg"
                         height="200px"
                         ></v-img>
                         <v-img
@@ -60,20 +60,25 @@
                         <v-card-actions class="justify-center">
                         <v-btn
                             :text="item.premium == 1 ? false : true"
-                        >Compartir</v-btn>
+                        > {{ myCurrentLanguage ? 'Add To Cart' : 'Añadir al carrito'}} </v-btn>
 
                         <v-btn
                             color="primary"
                             :text="item.premium == 1 ? false : true"
                             @click="linlBuyPackage(item.id)"
                         >
-                            Comprar
+                            {{ myCurrentLanguage ? 'Contact US' : 'Contáctenos' }}
                         </v-btn>
                         </v-card-actions>
                     </v-card>
 
                   </template>
               </v-hover>
+          </v-col>
+      </v-row>
+      <v-row>
+          <v-col>
+              <div class="text-center"><strong>{{ myCurrentLanguage ? 'Availables in 6,8 and 12 weeks sessions' : 'Disponible en sesiones de 6,8 y 12 semanas.' }}</strong></div>
           </v-col>
       </v-row>
   </v-container>
@@ -91,6 +96,12 @@ export default {
 
     created() {
         this.fetchPackages();
+    },
+
+    computed: {
+        myCurrentLanguage() {
+            return this.$store.getters.getLanguage;
+        }
     },
 
     methods: {
