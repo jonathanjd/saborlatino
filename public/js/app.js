@@ -84860,7 +84860,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -84890,17 +84890,116 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            packages: [],
+            details: []
+        };
+    },
+    created: function created() {
+        this.fetchPackages();
+    },
 
-      components: {
-            InfoTop: __WEBPACK_IMPORTED_MODULE_0__InfoTop___default.a,
-            NavBar: __WEBPACK_IMPORTED_MODULE_1__NavBar___default.a
-      }
+
+    methods: {
+        fetchPackages: function fetchPackages() {
+            var _this = this;
+
+            Vue.axios.get('/api/packages/web').then(function (response) {
+                if (response.data.msj === 'success') {
+                    _this.packages = response.data.package;
+                }
+            });
+        },
+        linlBuyPackage: function linlBuyPackage(id) {
+            this.$router.push({
+                name: 'buy',
+                params: { 'packageId': id }
+            });
+        }
+    },
+
+    components: {
+        InfoTop: __WEBPACK_IMPORTED_MODULE_0__InfoTop___default.a,
+        NavBar: __WEBPACK_IMPORTED_MODULE_1__NavBar___default.a
+    }
 
 });
 
@@ -84930,7 +85029,7 @@ var render = function() {
                 { attrs: { md: "12" } },
                 [
                   _c("h3", { staticClass: "display-1 text-md-center pa-5" }, [
-                    _vm._v(" Section Packages - En Desarrollo ")
+                    _vm._v(" Paquetes")
                   ]),
                   _vm._v(" "),
                   _c("v-divider")
@@ -84938,6 +85037,188 @@ var render = function() {
                 1
               )
             ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-row",
+            { attrs: { "data-aos": "zoom-in" } },
+            _vm._l(_vm.packages, function(item, index) {
+              return _c(
+                "v-col",
+                { key: item.id },
+                [
+                  _c("v-hover", {
+                    scopedSlots: _vm._u(
+                      [
+                        {
+                          key: "default",
+                          fn: function(ref) {
+                            var hover = ref.hover
+                            return [
+                              _c(
+                                "v-card",
+                                {
+                                  staticClass: "mx-auto",
+                                  attrs: {
+                                    dark: item.premium == 1 ? true : false,
+                                    "max-width": "344",
+                                    elevation: hover ? 24 : 6
+                                  }
+                                },
+                                [
+                                  index == 0
+                                    ? _c("v-img", {
+                                        attrs: {
+                                          src: "/img/package.jpg",
+                                          height: "200px"
+                                        }
+                                      })
+                                    : _vm._e(),
+                                  _vm._v(" "),
+                                  index == 1
+                                    ? _c("v-img", {
+                                        attrs: {
+                                          src: "/img/package1.jpg",
+                                          height: "200px"
+                                        }
+                                      })
+                                    : _vm._e(),
+                                  _vm._v(" "),
+                                  index == 2
+                                    ? _c("v-img", {
+                                        attrs: {
+                                          src: "/img/package2.jpg",
+                                          height: "200px"
+                                        }
+                                      })
+                                    : _vm._e(),
+                                  _vm._v(" "),
+                                  index == 3
+                                    ? _c("v-img", {
+                                        attrs: {
+                                          src: "/img/package3.jpg",
+                                          height: "200px"
+                                        }
+                                      })
+                                    : _vm._e(),
+                                  _vm._v(" "),
+                                  _c("v-card-title", [
+                                    _vm._v(
+                                      "\n                                " +
+                                        _vm._s(item.name) +
+                                        "\n                            "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  item.details_package
+                                    ? _c(
+                                        "v-list",
+                                        { attrs: { shaped: "" } },
+                                        [
+                                          _c(
+                                            "v-list-item-group",
+                                            { attrs: { color: "primary" } },
+                                            _vm._l(
+                                              item.details_package,
+                                              function(value) {
+                                                return _c(
+                                                  "v-list-item",
+                                                  { key: value.id },
+                                                  [
+                                                    _c(
+                                                      "v-list-item-icon",
+                                                      [
+                                                        _c("v-icon", [
+                                                          _vm._v(
+                                                            "fas fa-circle"
+                                                          )
+                                                        ])
+                                                      ],
+                                                      1
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "v-list-item-content",
+                                                      [
+                                                        _c(
+                                                          "v-list-item-title",
+                                                          {
+                                                            domProps: {
+                                                              textContent: _vm._s(
+                                                                value.feature
+                                                              )
+                                                            }
+                                                          }
+                                                        )
+                                                      ],
+                                                      1
+                                                    )
+                                                  ],
+                                                  1
+                                                )
+                                              }
+                                            ),
+                                            1
+                                          )
+                                        ],
+                                        1
+                                      )
+                                    : _vm._e(),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-card-actions",
+                                    { staticClass: "justify-center" },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            text:
+                                              item.premium == 1 ? false : true
+                                          }
+                                        },
+                                        [_vm._v("Compartir")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "primary",
+                                            text:
+                                              item.premium == 1 ? false : true
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.linlBuyPackage(item.id)
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\n                                Comprar\n                            "
+                                          )
+                                        ]
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ]
+                          }
+                        }
+                      ],
+                      null,
+                      true
+                    )
+                  })
+                ],
+                1
+              )
+            }),
             1
           )
         ],
@@ -85043,7 +85324,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -85058,6 +85339,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__InfoTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__InfoTop__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__NavBar__);
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -85111,13 +85400,51 @@ var render = function() {
                 { attrs: { md: "12" } },
                 [
                   _c("h3", { staticClass: "display-1 text-md-center pa-5" }, [
-                    _vm._v(" Section About - En Desarrollo ")
+                    _vm._v(" ¿Quiénes Somos?")
                   ]),
                   _vm._v(" "),
                   _c("v-divider")
                 ],
                 1
               )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-row",
+            [
+              _c(
+                "v-col",
+                { attrs: { md: "6" } },
+                [
+                  _c("v-img", {
+                    attrs: {
+                      "data-aos": "zoom-in",
+                      height: "100%",
+                      width: "100%",
+                      src: "/img/who-page.jpg"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("v-col", { attrs: { md: "6" } }, [
+                _c(
+                  "p",
+                  {
+                    staticClass: "text-justify",
+                    attrs: { "data-aos": "zoom-in" }
+                  },
+                  [
+                    _c("strong", [_vm._v("Pa' Lante Moving Forward Coaching")]),
+                    _vm._v(
+                      " se creó para ofrecer un entrenamiento en el crecimiento personal y familiar. Específico para aquellas personas que necesitan y creen que el bienestar y el rendimiento se consiguen a través de una dirección y una orientación profesional. Entrenamos y acompañamos a las personas en su proceso de cumplir sus objetivos, metas, propósitos y dirigirlos a que logren una satisfacción personal que los lleve a descubrir lo que realmente es importante en su vida."
+                    )
+                  ]
+                )
+              ])
             ],
             1
           )
