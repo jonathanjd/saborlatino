@@ -18,6 +18,7 @@
                 </v-col>
             </v-row>
         </v-container>
+        <Footer />
     </div>
 </template>
 
@@ -25,6 +26,7 @@
 
 import InfoTop from './InfoTop';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 export default {
 
@@ -44,6 +46,7 @@ export default {
   components: {
         InfoTop,
         NavBar,
+        Footer
     }
 }
 </script>

@@ -57,6 +57,12 @@ export default {
         }
     },
 
+    computed: {
+      myCurrentLanguage() {
+        return this.$store.getters.getLanguage;
+      },
+    },
+
     methods: {
 
         changeLanguage(type) {
