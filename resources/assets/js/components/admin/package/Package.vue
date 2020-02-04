@@ -2,7 +2,7 @@
   <v-row>
     <v-col>
       <div class="display-1" :md="12">
-          Paquetes
+          Servicios
       </div>
     </v-col>
 

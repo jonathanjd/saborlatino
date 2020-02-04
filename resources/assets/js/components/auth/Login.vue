@@ -50,11 +50,15 @@
             </v-card>
           </v-col>
         </v-row>
+        <SnackBarMessage />
       </v-container>
     </v-content>
 </template>
 
 <script>
+
+import SnackBarMessage from '../help/SnackBarMessage'
+
 export default {
 
   data(){
@@ -62,24 +66,70 @@ export default {
       formLogin: {
         email: '',
         password: ''
-      }
+      },
+      snackbar: false
     }
   },
 
   created() {
-    if (User.loggedIn()) {
-      this.$router.push({name: 'admin'});
-    }
+
+    this.isLogin();
+
   },
 
 
   methods: {
 
     login(){
-        this.$router.push({name: 'admin'});
-        User.login(this.formLogin);
+
+      Vue.axios.post('/api/auth/login', this.formLogin)
+        .then(res => {
+
+          console.log(res)
+
+          if (res.data.error === 'Unauthorized') {
+            this.$store.dispatch('changeMessage', 'Usuario o Contraseña incorrecta');
+            this.$store.dispatch('changeColor', 'red');
+            this.$store.dispatch('changeShowSnackbar', true);
+          }
+
+          if (res.data.message === 'success') {
+           
+            localStorage.setItem('myToken', res.data.access_token);
+
+            this.$router.push({name: 'admin'});
+
+          }
+    
+
+        })
+        .catch(error => {
+          console.log(error);
+      });
       },
 
+      isLogin() {
+        
+        const myToken = localStorage.getItem('myToken');
+
+      if (myToken !== null) {
+        Vue.axios.get('/api/auth/is-login?token='.concat(myToken)).then(res => {
+          
+          if (res.data.message === true) {
+            this.$router.push({name: 'admin'});
+          }
+
+        });
+      }
+
+
+      }
+
+  },
+
+
+  components: {
+    SnackBarMessage
   }
 
 }

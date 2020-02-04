@@ -29,16 +29,7 @@
             <v-icon>fas fa-box-open</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Paquetes</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item @click="changeComponent('Service')" link>
-          <v-list-item-action>
-            <v-icon>fas fa-list</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Service</v-list-item-title>
+            <v-list-item-title>Servicios</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -65,7 +56,7 @@
             <v-icon>fas fa-sign-out-alt</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Cerrar Sesion</v-list-item-title>
+            <v-list-item-title @click="logout()">Cerrar Sesion</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -103,7 +94,6 @@
   import Chat from './chat/Chat'
   import Website from './website/Website'
   import Package from './package/Package'
-  import Service from './service/Service'
   import Review from './review/Review'
 
   export default {
@@ -117,9 +107,9 @@
     }),
 
     created() {
-      // if (User.loggedIn() === false) {
-      //   this.$router.push({name: 'login'});
-      // }
+
+      this.isLogin();
+
     },
 
     methods: {
@@ -145,6 +135,35 @@
 
       linkWebsite() {
         this.$router.push({name: 'home'});
+      },
+
+      isLogin() {
+        
+        const myToken = localStorage.getItem('myToken');
+
+        if (myToken === null) {
+          this.$router.push({name: 'login'});
+        }
+
+        Vue.axios.get('/api/auth/is-login?token='.concat(myToken)).then(res => {
+          
+          if (res.data.message === false) {
+            this.$router.push({name: 'login'});
+          }
+
+        });
+
+      },
+
+      logout() {
+
+        const myToken = localStorage.getItem('myToken');
+        Vue.axios.post('/api/auth/logout?token='.concat(myToken)).then(res => {
+          if (res.data.message === true) {
+            localStorage.removeItem('myToken');
+            this.$router.push({name: 'login'});
+          }
+        });
       }
     },
     components: {
@@ -152,7 +171,6 @@
       Chat,
       Website,
       Package,
-      Service,
       Review
     }
   }

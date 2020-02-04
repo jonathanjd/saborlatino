@@ -40,9 +40,6 @@ export default new Vuetify({
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-import User from './helpers/User';
-window.User = User;
-
 import router from './router/router';
 
 const app = new Vue({

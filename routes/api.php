@@ -22,7 +22,7 @@ Route::group([
     Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
     Route::post('me', 'AuthController@me');
-
+    Route::get('is-login', 'AuthController@isLogin');
   });
 
   Route::get('reviews/web', 'ReviewController@getWeb');
