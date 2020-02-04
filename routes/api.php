@@ -1,5 +1,6 @@
 <?php
 
+use App\Events\Event;
 use Illuminate\Http\Request;
 
 /*
@@ -30,3 +31,8 @@ Route::group([
   Route::get('packages/web', 'PackageController@getWeb');
   Route::resource('packages', 'PackageController');
   Route::resource('detailpackages', 'DetailPackageController');
+
+  Route::post('test-pusher', function(){
+    event(new Event('hello world'));
+    return response()->json(['msj' => 'success'], 200);
+  });

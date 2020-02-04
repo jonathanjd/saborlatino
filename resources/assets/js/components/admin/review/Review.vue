@@ -247,7 +247,12 @@ export default {
         this.typeSnack = 'success';
         this.textSnack = 'Registro Creado con Éxito';
         this.showSnackBar = true;
-        this.clearFormCreate();
+        this.form.name = '';
+        this.form.description = '';
+        this.form.active = true;
+
+        this.$refs.obs.reset();
+        this.$refs.form.reset();
         this.fetchReviews();
       });
 

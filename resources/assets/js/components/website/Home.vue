@@ -6,21 +6,19 @@
         <Header></Header>
         <Mission></Mission>
         <About></About>
-        <!-- <Service></Service> -->
         <Packages></Packages>
         <Question></Question>
         <Video></Video>
         <Review></Review>
         <ContactUs></ContactUs>
-        <Footer></Footer>
         <ChatLive></ChatLive>
+        <PlayAudio></PlayAudio>
+        <Footer></Footer>
         <v-snackbar
           v-model="snackbar"
           color="white"
           :timeout="20000"
-          right
           top
-          light
         >
           <v-chip @click.prevent="changeLanguage(myCurrentLanguage)" class="ma-2" color="primary">Translate</v-chip>
           <v-btn
@@ -48,9 +46,9 @@ import Video from './Video';
 import Team from './Team';
 import Review from './Review';
 import ContactUs from './ContactUs';
-import Chat from './Chat';
 import Footer from './Footer';
 import ChatLive from './ChatLive';
+import PlayAudio from './PlayAudio';
 
 export default {
 
@@ -89,7 +87,8 @@ export default {
         Review,
         ContactUs,
         Footer,
-        ChatLive
+        ChatLive,
+        PlayAudio
     }
 }
 </script>

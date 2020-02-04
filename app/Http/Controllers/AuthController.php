@@ -66,15 +66,14 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    protected function respondWithToken($token)
+    public function respondWithToken($token)
     {
         return response()->json([
             'message' => 'success',
             'access_token' => $token,
             'token_type' => 'bearer',
-            'expires_in' => auth('api')->factory()->getTTL() * 60,
             'user' => auth('api')->user()->name
-        ]);
+        ], 200);
     }
 
     public function isLogin()

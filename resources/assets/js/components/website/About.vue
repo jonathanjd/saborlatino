@@ -12,6 +12,15 @@
             height="400px"
             src="/img/who.jpg"
           >
+                <template v-slot:placeholder>
+                  <v-row
+                    class="fill-height ma-0"
+                    align="center"
+                    justify="center"
+                  >
+                    <v-progress-circular indeterminate color="black lighten-5"></v-progress-circular>
+                  </v-row>
+                </template>
             <v-card-title data-aos="fade-right" data-aos-delay="100" class="title">{{ myCurrentLanguage ? 'About us' : '¿Quiénes Somos?' }}</v-card-title>
           </v-img>
 

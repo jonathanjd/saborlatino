@@ -19,8 +19,15 @@
 
         <v-divider></v-divider>
 
-        <v-card-text class="white--text">
+        <v-card-text class="white--text hidden-sm-and-down">
             <strong> ©{{ new Date().getFullYear() }} by paLante.com. Proudly created with <a href="http://emcomputersolutions.com/" target="_blank">E&M Computer Solutions</a> </strong>
+        </v-card-text>
+        <v-card-text class="white--text hidden-md-and-up">
+            <strong> ©{{ new Date().getFullYear() }} by paLante.com.</strong>
+              <br>
+            <strong>
+              <a href="http://emcomputersolutions.com/" target="_blank">E&M Computer Solutions</a> 
+            </strong>
         </v-card-text>
       </v-card>
     </v-footer>
