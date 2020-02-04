@@ -45,8 +45,6 @@ export default {
       items: [
         { title: 'Spanish' },
         { title: 'English' },
-        // { title: 'Item3' },
-        // { title: 'Item4' },
       ],
     }),
 
@@ -54,7 +52,7 @@ export default {
 
       myCurrentLanguage() {
         return this.$store.getters.getLanguage;
-      }
+      },
 
     },
 

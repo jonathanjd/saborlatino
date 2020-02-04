@@ -5,7 +5,7 @@
         <v-container>
             <v-row>
                 <v-col md="12">
-                    <h3 class="display-1 text-md-center pa-5"><v-icon large>far fa-credit-card</v-icon> Comprar Service <v-icon large>fas fa-box-open</v-icon></h3>
+                    <h3 class="display-1 text-md-center pa-5"><v-icon large>far fa-credit-card</v-icon> {{ myCurrentLanguage ? 'Buy service' : 'Comprar Service' }} <v-icon large>fas fa-box-open</v-icon></h3>
                     <v-divider></v-divider>
                 </v-col>
                 <v-col md="6" style="background-color:#FFEB3B">
@@ -48,10 +48,14 @@
                     </v-hover>
                 </v-col>
                 <v-col md="6">
-                    <h4 class="display-1 text-md-center"><v-icon large>fas fa-circle</v-icon> Forma de Pago</h4>
-                    <v-btn class="text-md-center my-5" block x-large color="primary">
-                        <v-icon class="mx-2" x-large>fab fa-cc-paypal</v-icon> Paypal
-                    </v-btn>
+                    <v-row>
+                        <v-col>
+                            <h4 class="display-1 text-md-center"><v-icon large>fas fa-circle</v-icon>{{ myCurrentLanguage ? 'Way to pay' : 'Forma de Pago'}}</h4>
+                            <v-chip href="https://www.paypal.me/nyc24" target="_blank" class="my-5" block x-large color="primary">
+                                <v-icon class="mx-2" x-large>fab fa-cc-paypal</v-icon> Paypal
+                            </v-chip>
+                        </v-col>
+                    </v-row>
                 </v-col>
             </v-row>
         </v-container>
@@ -75,6 +79,10 @@ export default {
 
         showInfoPackage() {
             return this.myPackage !== '' ? true : false;
+        },
+
+        myCurrentLanguage() {
+            return this.$store.getters.getLanguage;
         }
 
     },

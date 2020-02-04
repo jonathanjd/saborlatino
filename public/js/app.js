@@ -80747,7 +80747,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -80758,6 +80758,9 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
 //
 //
 //
@@ -80811,7 +80814,13 @@ var render = function() {
           _vm._v(" "),
           _c(
             "v-btn",
-            { attrs: { icon: "" } },
+            {
+              attrs: {
+                href: "https://www.facebook.com/groups/2226367134281033/",
+                target: "_blank",
+                icon: ""
+              }
+            },
             [_c("v-icon", [_vm._v("fab fa-facebook-f")])],
             1
           ),
@@ -80820,6 +80829,20 @@ var render = function() {
             "v-btn",
             { attrs: { icon: "" } },
             [_c("v-icon", [_vm._v("fab fa-instagram")])],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              attrs: {
+                href:
+                  "https://open.spotify.com/show/4qiBqYPfHxSxtjrBwngSEp?si=NIjkW_WQTNmS0q--mU9GjA",
+                target: "_blank",
+                icon: ""
+              }
+            },
+            [_c("v-icon", [_vm._v("fab fa-spotify")])],
             1
           ),
           _vm._v(" "),
@@ -80881,7 +80904,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -81339,13 +81362,22 @@ var render = function() {
                                   : "Sesión de coaching gratuita de 30 minutos"
                               ) + " "
                             ),
-                            _c("v-btn", { attrs: { color: "success" } }, [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.myCurrentLanguage ? "Start" : "Empezar"
+                            _c(
+                              "v-btn",
+                              {
+                                attrs: {
+                                  color: "success",
+                                  to: { name: "onlineService" }
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  _vm._s(
+                                    _vm.myCurrentLanguage ? "Start" : "Empezar"
+                                  )
                                 )
-                              )
-                            ])
+                              ]
+                            )
                           ],
                           1
                         )
@@ -81462,7 +81494,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -81473,6 +81505,20 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -81574,6 +81620,83 @@ var render = function() {
                             "\n          "
                         )
                       ]
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-row",
+                [
+                  _c("v-col", [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "text-justify subtitle-1",
+                        attrs: {
+                          "data-aos": "fade-right",
+                          "data-aos-delay": "200"
+                        }
+                      },
+                      [
+                        _c("v-icon", [_vm._v("fas fa-podcast")]),
+                        _vm._v(" "),
+                        _c("strong", [_vm._v("Podcast ")]),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href:
+                                "https://podcast.app/blissful-pause-for-self-care-minute-guided-mindfulness-meditation-e58249947/?utm_source=and&utm_medium=share&fbclid=IwAR1287CZ4VyJfFmrt4EmCKqImW13BDY_cGTTtX12jNXDxSAfYCBQF0WuBGs",
+                              target: "_blank"
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "We need more meditation in our life for better life management"
+                            )
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-row",
+                [
+                  _c("v-col", [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "text-justify subtitle-1",
+                        attrs: {
+                          "data-aos": "fade-right",
+                          "data-aos-delay": "200"
+                        }
+                      },
+                      [
+                        _c("v-icon", [_vm._v("fas fa-podcast")]),
+                        _vm._v(" "),
+                        _c("strong", [_vm._v("Podcast ")]),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "https://anchor.fm/sandra-raymond",
+                              target: "_blank"
+                            }
+                          },
+                          [_vm._v("Pa-lante-Moving Forward Coach")]
+                        )
+                      ],
+                      1
                     )
                   ])
                 ],
@@ -81685,7 +81808,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -81696,14 +81819,6 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -81828,72 +81943,6 @@ var render = function() {
                             "\n          "
                         )
                       ]
-                    ),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "text-justify subtitle-1",
-                        attrs: {
-                          "data-aos": "fade-right",
-                          "data-aos-delay": "200"
-                        }
-                      },
-                      [
-                        _c("v-icon", [_vm._v("fas fa-podcast")]),
-                        _vm._v(" "),
-                        _c("strong", [_vm._v("Podcast ")]),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            attrs: {
-                              href:
-                                "https://podcast.app/blissful-pause-for-self-care-minute-guided-mindfulness-meditation-e58249947/?utm_source=and&utm_medium=share&fbclid=IwAR1287CZ4VyJfFmrt4EmCKqImW13BDY_cGTTtX12jNXDxSAfYCBQF0WuBGs",
-                              target: "_blank"
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "We need more meditation in our life for better life management"
-                            )
-                          ]
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "text-justify subtitle-1",
-                        attrs: {
-                          "data-aos": "fade-right",
-                          "data-aos-delay": "200"
-                        }
-                      },
-                      [
-                        _c("v-icon", [_vm._v("fab fa-spotify")]),
-                        _vm._v(" "),
-                        _c("strong", [_vm._v("Spotify ")]),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            attrs: {
-                              href:
-                                "https://open.spotify.com/show/4qiBqYPfHxSxtjrBwngSEp?si=NIjkW_WQTNmS0q--mU9GjA",
-                              target: "_blank"
-                            }
-                          },
-                          [_vm._v("Trailer")]
-                        )
-                      ],
-                      1
                     )
                   ])
                 ],
@@ -82579,7 +82628,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -82676,12 +82725,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
             packages: [],
-            details: []
+            details: [],
+            dialog: false
         };
     },
     created: function created() {
@@ -82739,6 +82801,24 @@ var render = function() {
                 attrs: { "data-aos": "zoom-in" }
               },
               [_vm._v(_vm._s(_vm.myCurrentLanguage ? "Services" : "Servicios"))]
+            ),
+            _vm._v(" "),
+            _c(
+              "h4",
+              {
+                staticClass:
+                  "display-1 text-center py-2 font-italic font-weight-medium",
+                attrs: { "data-aos": "zoom-in" }
+              },
+              [
+                _vm._v(
+                  _vm._s(
+                    _vm.myCurrentLanguage
+                      ? "Availables in 6,8 and 12 weeks sessions"
+                      : "Disponible en sesiones de 6,8 y 12 semanas."
+                  )
+                )
+              ]
             )
           ])
         ],
@@ -82748,211 +82828,252 @@ var render = function() {
       _c(
         "v-row",
         { attrs: { "data-aos": "zoom-in" } },
-        _vm._l(_vm.packages, function(item, index) {
-          return _c(
-            "v-col",
-            { key: item.id },
-            [
-              _c("v-hover", {
-                scopedSlots: _vm._u(
-                  [
-                    {
-                      key: "default",
-                      fn: function(ref) {
-                        var hover = ref.hover
-                        return [
-                          _c(
-                            "v-card",
-                            {
-                              staticClass: "mx-auto",
-                              attrs: {
-                                dark: item.premium == 1 ? true : false,
-                                "max-width": "344",
-                                elevation: hover ? 24 : 6
-                              }
-                            },
-                            [
-                              index == 0
-                                ? _c("v-img", {
-                                    attrs: {
-                                      src: "/img/service-individual.jpg",
-                                      height: "200px"
-                                    }
-                                  })
-                                : _vm._e(),
-                              _vm._v(" "),
-                              index == 1
-                                ? _c("v-img", {
-                                    attrs: {
-                                      src: "/img/package1.jpg",
-                                      height: "200px"
-                                    }
-                                  })
-                                : _vm._e(),
-                              _vm._v(" "),
-                              index == 2
-                                ? _c("v-img", {
-                                    attrs: {
-                                      src: "/img/package2.jpg",
-                                      height: "200px"
-                                    }
-                                  })
-                                : _vm._e(),
-                              _vm._v(" "),
-                              index == 3
-                                ? _c("v-img", {
-                                    attrs: {
-                                      src: "/img/package3.jpg",
-                                      height: "200px"
-                                    }
-                                  })
-                                : _vm._e(),
-                              _vm._v(" "),
-                              _c("v-card-title", [
-                                _vm._v(
-                                  "\n                          " +
-                                    _vm._s(item.name) +
-                                    "\n                      "
-                                )
-                              ]),
-                              _vm._v(" "),
-                              item.details_package
-                                ? _c(
-                                    "v-list",
-                                    { attrs: { shaped: "" } },
-                                    [
-                                      _c(
-                                        "v-list-item-group",
-                                        { attrs: { color: "primary" } },
-                                        _vm._l(item.details_package, function(
-                                          value
-                                        ) {
-                                          return _c(
-                                            "v-list-item",
-                                            { key: value.id },
-                                            [
-                                              _c(
-                                                "v-list-item-icon",
-                                                [
-                                                  _c("v-icon", [
-                                                    _vm._v("fas fa-circle")
-                                                  ])
-                                                ],
-                                                1
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "v-list-item-content",
-                                                [
-                                                  _c("v-list-item-title", {
-                                                    domProps: {
-                                                      textContent: _vm._s(
-                                                        value.feature
-                                                      )
-                                                    }
-                                                  })
-                                                ],
-                                                1
-                                              )
-                                            ],
-                                            1
-                                          )
-                                        }),
-                                        1
-                                      )
-                                    ],
-                                    1
-                                  )
-                                : _vm._e(),
-                              _vm._v(" "),
-                              _c(
-                                "v-card-actions",
-                                { staticClass: "justify-center" },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
+        [
+          _vm._l(_vm.packages, function(item, index) {
+            return _c(
+              "v-col",
+              { key: item.id },
+              [
+                _c("v-hover", {
+                  scopedSlots: _vm._u(
+                    [
+                      {
+                        key: "default",
+                        fn: function(ref) {
+                          var hover = ref.hover
+                          return [
+                            _c(
+                              "v-card",
+                              {
+                                staticClass: "mx-auto",
+                                attrs: {
+                                  dark: item.premium == 1 ? true : false,
+                                  "max-width": "344",
+                                  elevation: hover ? 24 : 6
+                                }
+                              },
+                              [
+                                index == 0
+                                  ? _c("v-img", {
                                       attrs: {
-                                        text: item.premium == 1 ? false : true
+                                        src: "/img/service-individual.jpg",
+                                        height: "200px"
                                       }
-                                    },
-                                    [
-                                      _vm._v(
-                                        " " +
-                                          _vm._s(
-                                            _vm.myCurrentLanguage
-                                              ? "Add To Cart"
-                                              : "Añadir al carrito"
-                                          ) +
-                                          " "
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-btn",
-                                    {
+                                    })
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                index == 1
+                                  ? _c("v-img", {
                                       attrs: {
-                                        color: "primary",
-                                        text: item.premium == 1 ? false : true
-                                      },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.linlBuyPackage(item.id)
+                                        src: "/img/package1.jpg",
+                                        height: "200px"
+                                      }
+                                    })
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                index == 2
+                                  ? _c("v-img", {
+                                      attrs: {
+                                        src: "/img/package2.jpg",
+                                        height: "200px"
+                                      }
+                                    })
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                index == 3
+                                  ? _c("v-img", {
+                                      attrs: {
+                                        src: "/img/package3.jpg",
+                                        height: "200px"
+                                      }
+                                    })
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _c("v-card-title", [
+                                  _vm._v(
+                                    "\n                          " +
+                                      _vm._s(item.name) +
+                                      "\n                      "
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                item.details_package
+                                  ? _c(
+                                      "v-list",
+                                      { attrs: { shaped: "" } },
+                                      [
+                                        _c(
+                                          "v-list-item-group",
+                                          { attrs: { color: "primary" } },
+                                          _vm._l(item.details_package, function(
+                                            value
+                                          ) {
+                                            return _c(
+                                              "v-list-item",
+                                              { key: value.id },
+                                              [
+                                                _c(
+                                                  "v-list-item-icon",
+                                                  [
+                                                    _c("v-icon", [
+                                                      _vm._v("fas fa-circle")
+                                                    ])
+                                                  ],
+                                                  1
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-list-item-content",
+                                                  [
+                                                    _c("v-list-item-title", {
+                                                      domProps: {
+                                                        textContent: _vm._s(
+                                                          value.feature
+                                                        )
+                                                      }
+                                                    })
+                                                  ],
+                                                  1
+                                                )
+                                              ],
+                                              1
+                                            )
+                                          }),
+                                          1
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _c(
+                                  "v-card-actions",
+                                  { staticClass: "justify-center" },
+                                  [
+                                    _c(
+                                      "v-btn",
+                                      {
+                                        attrs: {
+                                          color: "primary",
+                                          text: item.premium == 1 ? false : true
+                                        },
+                                        on: {
+                                          click: function($event) {
+                                            _vm.dialog = true
+                                          }
                                         }
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                          " +
-                                          _vm._s(
-                                            _vm.myCurrentLanguage
-                                              ? "Contact US"
-                                              : "Contáctenos"
-                                          ) +
-                                          "\n                      "
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        ]
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                          " +
+                                            _vm._s(
+                                              _vm.myCurrentLanguage
+                                                ? "Contact US"
+                                                : "Contáctenos"
+                                            ) +
+                                            "\n                      "
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-btn",
+                                      {
+                                        attrs: {
+                                          href: "https://www.paypal.me/nyc24",
+                                          target: "_blank",
+                                          text: item.premium == 1 ? false : true
+                                        }
+                                      },
+                                      [
+                                        _vm._v(
+                                          " " +
+                                            _vm._s(
+                                              _vm.myCurrentLanguage
+                                                ? "Pay Now"
+                                                : "Pagar Ahora"
+                                            ) +
+                                            " "
+                                        )
+                                      ]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        }
                       }
-                    }
-                  ],
-                  null,
-                  true
-                )
-              })
+                    ],
+                    null,
+                    true
+                  )
+                })
+              ],
+              1
+            )
+          }),
+          _vm._v(" "),
+          _c(
+            "v-dialog",
+            {
+              attrs: { persistent: "", "max-width": "290" },
+              model: {
+                value: _vm.dialog,
+                callback: function($$v) {
+                  _vm.dialog = $$v
+                },
+                expression: "dialog"
+              }
+            },
+            [
+              _c(
+                "v-card",
+                [
+                  _c("v-card-title", { staticClass: "headline" }, [
+                    _vm._v("Contact Us")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    [
+                      _c("v-icon", [_vm._v("fas fa-phone")]),
+                      _vm._v(" "),
+                      _c("strong", [_vm._v("786-326-6522")])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-actions",
+                    [
+                      _c("v-spacer"),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { block: "", color: "primary", text: "" },
+                          on: {
+                            click: function($event) {
+                              _vm.dialog = false
+                            }
+                          }
+                        },
+                        [_vm._v("Ok")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
             ],
             1
           )
-        }),
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "v-row",
-        [
-          _c("v-col", [
-            _c("div", { staticClass: "text-center" }, [
-              _c("strong", [
-                _vm._v(
-                  _vm._s(
-                    _vm.myCurrentLanguage
-                      ? "Availables in 6,8 and 12 weeks sessions"
-                      : "Disponible en sesiones de 6,8 y 12 semanas."
-                  )
-                )
-              ])
-            ])
-          ])
         ],
-        1
+        2
       )
     ],
     1
@@ -85867,7 +85988,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -85882,6 +86003,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__InfoTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__InfoTop__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__NavBar__);
+//
+//
+//
+//
 //
 //
 //
@@ -85958,6 +86083,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     computed: {
         showInfoPackage: function showInfoPackage() {
             return this.myPackage !== '' ? true : false;
+        },
+        myCurrentLanguage: function myCurrentLanguage() {
+            return this.$store.getters.getLanguage;
         }
     },
 
@@ -86012,7 +86140,15 @@ var render = function() {
                       _c("v-icon", { attrs: { large: "" } }, [
                         _vm._v("far fa-credit-card")
                       ]),
-                      _vm._v(" Comprar Service "),
+                      _vm._v(
+                        " " +
+                          _vm._s(
+                            _vm.myCurrentLanguage
+                              ? "Buy service"
+                              : "Comprar Service"
+                          ) +
+                          " "
+                      ),
                       _c("v-icon", { attrs: { large: "" } }, [
                         _vm._v("fas fa-box-open")
                       ])
@@ -86145,30 +86281,57 @@ var render = function() {
                 { attrs: { md: "6" } },
                 [
                   _c(
-                    "h4",
-                    { staticClass: "display-1 text-md-center" },
-                    [
-                      _c("v-icon", { attrs: { large: "" } }, [
-                        _vm._v("fas fa-circle")
-                      ]),
-                      _vm._v(" Forma de Pago")
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-btn",
-                    {
-                      staticClass: "text-md-center my-5",
-                      attrs: { block: "", "x-large": "", color: "primary" }
-                    },
+                    "v-row",
                     [
                       _c(
-                        "v-icon",
-                        { staticClass: "mx-2", attrs: { "x-large": "" } },
-                        [_vm._v("fab fa-cc-paypal")]
-                      ),
-                      _vm._v(" Paypal\n                ")
+                        "v-col",
+                        [
+                          _c(
+                            "h4",
+                            { staticClass: "display-1 text-md-center" },
+                            [
+                              _c("v-icon", { attrs: { large: "" } }, [
+                                _vm._v("fas fa-circle")
+                              ]),
+                              _vm._v(
+                                _vm._s(
+                                  _vm.myCurrentLanguage
+                                    ? "Way to pay"
+                                    : "Forma de Pago"
+                                )
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-chip",
+                            {
+                              staticClass: "my-5",
+                              attrs: {
+                                href: "https://www.paypal.me/nyc24",
+                                target: "_blank",
+                                block: "",
+                                "x-large": "",
+                                color: "primary"
+                              }
+                            },
+                            [
+                              _c(
+                                "v-icon",
+                                {
+                                  staticClass: "mx-2",
+                                  attrs: { "x-large": "" }
+                                },
+                                [_vm._v("fab fa-cc-paypal")]
+                              ),
+                              _vm._v(" Paypal\n                        ")
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
                     ],
                     1
                   )
@@ -86281,7 +86444,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -86296,6 +86459,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__InfoTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__InfoTop__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__NavBar__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Footer__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -86391,7 +86574,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             packages: [],
-            details: []
+            details: [],
+            dialog: false
         };
     },
     created: function created() {
@@ -86425,7 +86609,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     components: {
         InfoTop: __WEBPACK_IMPORTED_MODULE_0__InfoTop___default.a,
-        NavBar: __WEBPACK_IMPORTED_MODULE_1__NavBar___default.a
+        NavBar: __WEBPACK_IMPORTED_MODULE_1__NavBar___default.a,
+        Footer: __WEBPACK_IMPORTED_MODULE_2__Footer___default.a
     }
 
 });
@@ -86462,6 +86647,24 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
+                  _c(
+                    "h4",
+                    {
+                      staticClass:
+                        "headline text-center py-2 font-italic font-weight-medium",
+                      attrs: { "data-aos": "zoom-in" }
+                    },
+                    [
+                      _vm._v(
+                        _vm._s(
+                          _vm.myCurrentLanguage
+                            ? "Availables in 6,8 and 12 weeks sessions"
+                            : "Disponible en sesiones de 6,8 y 12 semanas."
+                        )
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
                   _c("v-divider")
                 ],
                 1
@@ -86473,201 +86676,267 @@ var render = function() {
           _c(
             "v-row",
             { attrs: { "data-aos": "zoom-in" } },
-            _vm._l(_vm.packages, function(item, index) {
-              return _c(
-                "v-col",
-                { key: item.id },
-                [
-                  _c("v-hover", {
-                    scopedSlots: _vm._u(
-                      [
-                        {
-                          key: "default",
-                          fn: function(ref) {
-                            var hover = ref.hover
-                            return [
-                              _c(
-                                "v-card",
-                                {
-                                  staticClass: "mx-auto",
-                                  attrs: {
-                                    dark: item.premium == 1 ? true : false,
-                                    "max-width": "344",
-                                    elevation: hover ? 24 : 6
-                                  }
-                                },
-                                [
-                                  index == 0
-                                    ? _c("v-img", {
-                                        attrs: {
-                                          src: "/img/service-individual.jpg",
-                                          height: "200px"
-                                        }
-                                      })
-                                    : _vm._e(),
-                                  _vm._v(" "),
-                                  index == 1
-                                    ? _c("v-img", {
-                                        attrs: {
-                                          src: "/img/package1.jpg",
-                                          height: "200px"
-                                        }
-                                      })
-                                    : _vm._e(),
-                                  _vm._v(" "),
-                                  index == 2
-                                    ? _c("v-img", {
-                                        attrs: {
-                                          src: "/img/package2.jpg",
-                                          height: "200px"
-                                        }
-                                      })
-                                    : _vm._e(),
-                                  _vm._v(" "),
-                                  index == 3
-                                    ? _c("v-img", {
-                                        attrs: {
-                                          src: "/img/package3.jpg",
-                                          height: "200px"
-                                        }
-                                      })
-                                    : _vm._e(),
-                                  _vm._v(" "),
-                                  _c("v-card-title", [
-                                    _vm._v(
-                                      "\n                                " +
-                                        _vm._s(item.name) +
-                                        "\n                            "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  item.details_package
-                                    ? _c(
-                                        "v-list",
-                                        { attrs: { shaped: "" } },
-                                        [
-                                          _c(
-                                            "v-list-item-group",
-                                            { attrs: { color: "primary" } },
-                                            _vm._l(
-                                              item.details_package,
-                                              function(value) {
-                                                return _c(
-                                                  "v-list-item",
-                                                  { key: value.id },
-                                                  [
-                                                    _c(
-                                                      "v-list-item-icon",
-                                                      [
-                                                        _c("v-icon", [
-                                                          _vm._v(
-                                                            "fas fa-circle"
-                                                          )
-                                                        ])
-                                                      ],
-                                                      1
-                                                    ),
-                                                    _vm._v(" "),
-                                                    _c(
-                                                      "v-list-item-content",
-                                                      [
-                                                        _c(
-                                                          "v-list-item-title",
-                                                          {
-                                                            domProps: {
-                                                              textContent: _vm._s(
-                                                                value.feature
-                                                              )
+            [
+              _vm._l(_vm.packages, function(item, index) {
+                return _c(
+                  "v-col",
+                  { key: item.id },
+                  [
+                    _c("v-hover", {
+                      scopedSlots: _vm._u(
+                        [
+                          {
+                            key: "default",
+                            fn: function(ref) {
+                              var hover = ref.hover
+                              return [
+                                _c(
+                                  "v-card",
+                                  {
+                                    staticClass: "mx-auto",
+                                    attrs: {
+                                      dark: item.premium == 1 ? true : false,
+                                      "max-width": "344",
+                                      elevation: hover ? 24 : 6
+                                    }
+                                  },
+                                  [
+                                    index == 0
+                                      ? _c("v-img", {
+                                          attrs: {
+                                            src: "/img/service-individual.jpg",
+                                            height: "200px"
+                                          }
+                                        })
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    index == 1
+                                      ? _c("v-img", {
+                                          attrs: {
+                                            src: "/img/package1.jpg",
+                                            height: "200px"
+                                          }
+                                        })
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    index == 2
+                                      ? _c("v-img", {
+                                          attrs: {
+                                            src: "/img/package2.jpg",
+                                            height: "200px"
+                                          }
+                                        })
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    index == 3
+                                      ? _c("v-img", {
+                                          attrs: {
+                                            src: "/img/package3.jpg",
+                                            height: "200px"
+                                          }
+                                        })
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _c("v-card-title", [
+                                      _vm._v(
+                                        "\n                                " +
+                                          _vm._s(item.name) +
+                                          "\n                            "
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    item.details_package
+                                      ? _c(
+                                          "v-list",
+                                          { attrs: { shaped: "" } },
+                                          [
+                                            _c(
+                                              "v-list-item-group",
+                                              { attrs: { color: "primary" } },
+                                              _vm._l(
+                                                item.details_package,
+                                                function(value) {
+                                                  return _c(
+                                                    "v-list-item",
+                                                    { key: value.id },
+                                                    [
+                                                      _c(
+                                                        "v-list-item-icon",
+                                                        [
+                                                          _c("v-icon", [
+                                                            _vm._v(
+                                                              "fas fa-circle"
+                                                            )
+                                                          ])
+                                                        ],
+                                                        1
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "v-list-item-content",
+                                                        [
+                                                          _c(
+                                                            "v-list-item-title",
+                                                            {
+                                                              domProps: {
+                                                                textContent: _vm._s(
+                                                                  value.feature
+                                                                )
+                                                              }
                                                             }
-                                                          }
-                                                        )
-                                                      ],
-                                                      1
-                                                    )
-                                                  ],
-                                                  1
-                                                )
-                                              }
-                                            ),
-                                            1
-                                          )
-                                        ],
-                                        1
-                                      )
-                                    : _vm._e(),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-card-actions",
-                                    { staticClass: "justify-center" },
-                                    [
-                                      _c(
-                                        "v-btn",
-                                        {
-                                          attrs: {
-                                            text:
-                                              item.premium == 1 ? false : true
-                                          }
-                                        },
-                                        [
-                                          _vm._v(
-                                            _vm._s(
-                                              _vm.myCurrentLanguage
-                                                ? "Add To Cart"
-                                                : "Añadir al carrito"
+                                                          )
+                                                        ],
+                                                        1
+                                                      )
+                                                    ],
+                                                    1
+                                                  )
+                                                }
+                                              ),
+                                              1
                                             )
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-btn",
-                                        {
-                                          attrs: {
-                                            color: "primary",
-                                            text:
-                                              item.premium == 1 ? false : true
-                                          },
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.linlBuyPackage(item.id)
+                                          ],
+                                          1
+                                        )
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-card-actions",
+                                      { staticClass: "justify-center" },
+                                      [
+                                        _c(
+                                          "v-btn",
+                                          {
+                                            attrs: {
+                                              color: "primary",
+                                              text:
+                                                item.premium == 1 ? false : true
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                _vm.dialog = true
+                                              }
                                             }
-                                          }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                " +
-                                              _vm._s(
-                                                _vm.myCurrentLanguage
-                                                  ? "Contact US"
-                                                  : "Contáctenos"
-                                              ) +
-                                              "\n                            "
-                                          )
-                                        ]
-                                      )
-                                    ],
-                                    1
-                                  )
-                                ],
-                                1
-                              )
-                            ]
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                " +
+                                                _vm._s(
+                                                  _vm.myCurrentLanguage
+                                                    ? "Contact US"
+                                                    : "Contáctenos"
+                                                ) +
+                                                "\n                            "
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-btn",
+                                          {
+                                            attrs: {
+                                              href:
+                                                "https://www.paypal.me/nyc24",
+                                              target: "_blank",
+                                              text:
+                                                item.premium == 1 ? false : true
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              " " +
+                                                _vm._s(
+                                                  _vm.myCurrentLanguage
+                                                    ? "Pay Now"
+                                                    : "Pagar Ahora"
+                                                ) +
+                                                " \n                            "
+                                            )
+                                          ]
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            }
                           }
-                        }
-                      ],
-                      null,
-                      true
-                    )
-                  })
+                        ],
+                        null,
+                        true
+                      )
+                    })
+                  ],
+                  1
+                )
+              }),
+              _vm._v(" "),
+              _c(
+                "v-dialog",
+                {
+                  attrs: { persistent: "", "max-width": "290" },
+                  model: {
+                    value: _vm.dialog,
+                    callback: function($$v) {
+                      _vm.dialog = $$v
+                    },
+                    expression: "dialog"
+                  }
+                },
+                [
+                  _c(
+                    "v-card",
+                    [
+                      _c("v-card-title", { staticClass: "headline" }, [
+                        _vm._v("Contact Us")
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-card-text",
+                        [
+                          _c("v-icon", [_vm._v("fas fa-phone")]),
+                          _vm._v(" "),
+                          _c("strong", [_vm._v("786-326-6522")])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-card-actions",
+                        [
+                          _c("v-spacer"),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              attrs: { block: "", color: "primary", text: "" },
+                              on: {
+                                click: function($event) {
+                                  _vm.dialog = false
+                                }
+                              }
+                            },
+                            [_vm._v("Ok")]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
                 ],
                 1
               )
-            }),
-            1
+            ],
+            2
           )
         ],
         1
-      )
+      ),
+      _vm._v(" "),
+      _c("Footer")
     ],
     1
   )
@@ -86768,7 +87037,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -86783,6 +87052,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__InfoTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__InfoTop__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__NavBar__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Footer__);
 //
 //
 //
@@ -86806,6 +87077,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+
 
 
 
@@ -86827,7 +87100,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     components: {
         InfoTop: __WEBPACK_IMPORTED_MODULE_0__InfoTop___default.a,
-        NavBar: __WEBPACK_IMPORTED_MODULE_1__NavBar___default.a
+        NavBar: __WEBPACK_IMPORTED_MODULE_1__NavBar___default.a,
+        Footer: __WEBPACK_IMPORTED_MODULE_2__Footer___default.a
     }
 });
 
@@ -86912,7 +87186,9 @@ var render = function() {
           )
         ],
         1
-      )
+      ),
+      _vm._v(" "),
+      _c("Footer")
     ],
     1
   )
@@ -87013,7 +87289,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -87028,6 +87304,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__InfoTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__InfoTop__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__NavBar__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Footer__);
 //
 //
 //
@@ -87051,6 +87329,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+
 
 
 
@@ -87073,7 +87353,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     components: {
         InfoTop: __WEBPACK_IMPORTED_MODULE_0__InfoTop___default.a,
-        NavBar: __WEBPACK_IMPORTED_MODULE_1__NavBar___default.a
+        NavBar: __WEBPACK_IMPORTED_MODULE_1__NavBar___default.a,
+        Footer: __WEBPACK_IMPORTED_MODULE_2__Footer___default.a
     }
 });
 
@@ -87152,7 +87433,9 @@ var render = function() {
           )
         ],
         1
-      )
+      ),
+      _vm._v(" "),
+      _c("Footer")
     ],
     1
   )
@@ -87253,7 +87536,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -87268,6 +87551,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__InfoTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__InfoTop__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NavBar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__NavBar__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Footer__);
 //
 //
 //
@@ -87313,6 +87598,42 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
@@ -87328,7 +87649,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   components: {
     InfoTop: __WEBPACK_IMPORTED_MODULE_0__InfoTop___default.a,
-    NavBar: __WEBPACK_IMPORTED_MODULE_1__NavBar___default.a
+    NavBar: __WEBPACK_IMPORTED_MODULE_1__NavBar___default.a,
+    Footer: __WEBPACK_IMPORTED_MODULE_2__Footer___default.a
   }
 
 });
@@ -87381,7 +87703,7 @@ var render = function() {
             [
               _c(
                 "v-col",
-                { attrs: { md: "6" } },
+                { attrs: { md: "4" } },
                 [
                   _c(
                     "v-card",
@@ -87396,7 +87718,50 @@ var render = function() {
                           staticClass: "white--text align-end",
                           attrs: { height: "400px", src: "/img/skype.png" }
                         },
-                        [_c("v-card-title", [_vm._v("Skype")])],
+                        [
+                          _c(
+                            "v-card-title",
+                            [
+                              _c(
+                                "v-tooltip",
+                                {
+                                  attrs: { bottom: "" },
+                                  scopedSlots: _vm._u([
+                                    {
+                                      key: "activator",
+                                      fn: function(ref) {
+                                        var on = ref.on
+                                        return [
+                                          _c(
+                                            "v-btn",
+                                            _vm._g(
+                                              {
+                                                attrs: {
+                                                  href:
+                                                    "https://secure.skype.com/portal/profile",
+                                                  target: "_blank"
+                                                }
+                                              },
+                                              on
+                                            ),
+                                            [_vm._v("Skype")]
+                                          )
+                                        ]
+                                      }
+                                    }
+                                  ])
+                                },
+                                [
+                                  _vm._v(" "),
+                                  _c("span", [
+                                    _vm._v("User: sandy raymond raymond")
+                                  ])
+                                ]
+                              )
+                            ],
+                            1
+                          )
+                        ],
                         1
                       )
                     ],
@@ -87408,7 +87773,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "v-col",
-                { attrs: { md: "6" } },
+                { attrs: { md: "4" } },
                 [
                   _c(
                     "v-card",
@@ -87420,7 +87785,75 @@ var render = function() {
                           staticClass: "white--text align-end",
                           attrs: { height: "400px", src: "/img/zoom.jpg" }
                         },
-                        [_c("v-card-title", [_vm._v("Zoom")])],
+                        [
+                          _c(
+                            "v-card-title",
+                            [
+                              _c(
+                                "v-btn",
+                                {
+                                  attrs: {
+                                    href: "https://zoom.us/j/3288599147",
+                                    target: "_blank"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Zoom\n              "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                { attrs: { md: "4" } },
+                [
+                  _c(
+                    "v-card",
+                    { staticClass: "mx-auto", attrs: { "max-width": "400" } },
+                    [
+                      _c(
+                        "v-img",
+                        {
+                          staticClass: "white--text align-end",
+                          attrs: { height: "400px", src: "/img/doxyme.png" }
+                        },
+                        [
+                          _c(
+                            "v-card-title",
+                            { staticStyle: { color: "black" } },
+                            [
+                              _c(
+                                "v-btn",
+                                {
+                                  attrs: {
+                                    href:
+                                      "https://doxy.me/palantemovingforward",
+                                    target: "_blank"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Doxy ME\n              "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          )
+                        ],
                         1
                       )
                     ],
@@ -87434,7 +87867,19 @@ var render = function() {
           )
         ],
         1
-      )
+      ),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("Footer")
     ],
     1
   )

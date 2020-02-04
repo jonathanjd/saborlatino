@@ -6,6 +6,7 @@
             <v-row>
                 <v-col md="12">
                     <h3 class="display-1 text-md-center pa-5">{{ myCurrentLanguage ? 'Services' : 'Servicios'  }} </h3>
+                    <h4 data-aos="zoom-in" class="headline text-center py-2 font-italic font-weight-medium">{{ myCurrentLanguage ? 'Availables in 6,8 and 12 weeks sessions' : 'Disponible en sesiones de 6,8 y 12 semanas.' }}</h4>
                     <v-divider></v-divider>
                 </v-col>
             </v-row>
@@ -62,25 +63,42 @@
                                 </v-list>
 
                                 <v-card-actions class="justify-center">
-                                <v-btn
-                                    :text="item.premium == 1 ? false : true"
-                                >{{ myCurrentLanguage ? 'Add To Cart' : 'Añadir al carrito'}}</v-btn>
 
                                 <v-btn
                                     color="primary"
                                     :text="item.premium == 1 ? false : true"
-                                    @click="linlBuyPackage(item.id)"
+                                    @click="dialog = true"
                                 >
                                     {{ myCurrentLanguage ? 'Contact US' : 'Contáctenos' }}
                                 </v-btn>
+
+                                <v-btn
+                                    href="https://www.paypal.me/nyc24"
+                                    target="_blank"
+                                    :text="item.premium == 1 ? false : true"
+                                > {{ myCurrentLanguage ? 'Pay Now' : 'Pagar Ahora'}} 
+                                </v-btn>
+
                                 </v-card-actions>
                             </v-card>
 
                         </template>
                     </v-hover>
                 </v-col>
+
+                <v-dialog v-model="dialog" persistent max-width="290">
+                    <v-card>
+                        <v-card-title class="headline">Contact Us</v-card-title>
+                        <v-card-text><v-icon>fas fa-phone</v-icon> <strong>786-326-6522</strong></v-card-text>
+                        <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn block color="primary" text @click="dialog = false">Ok</v-btn>
+                        </v-card-actions>
+                    </v-card>
+                </v-dialog>
             </v-row>
         </v-container>
+        <Footer />
     </div>
 </template>
 
@@ -88,13 +106,14 @@
 
 import InfoTop from './InfoTop';
 import NavBar from './NavBar';
-
+import Footer from './Footer';
 export default {
 
         data() {
         return {
             packages: [],
-            details: []
+            details: [],
+            dialog: false
         }
     },
 
@@ -128,6 +147,7 @@ export default {
   components: {
         InfoTop,
         NavBar,
+        Footer
     }
 
 }

@@ -12,6 +12,20 @@
             </div>
           </v-col>
         </v-row>
+        <v-row>
+          <v-col>
+            <div data-aos="fade-right" data-aos-delay="200" class="text-justify subtitle-1">
+              <v-icon>fas fa-podcast</v-icon> <strong>Podcast </strong> <a href="https://podcast.app/blissful-pause-for-self-care-minute-guided-mindfulness-meditation-e58249947/?utm_source=and&utm_medium=share&fbclid=IwAR1287CZ4VyJfFmrt4EmCKqImW13BDY_cGTTtX12jNXDxSAfYCBQF0WuBGs" target="_blank">We need more meditation in our life for better life management</a>
+            </div>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col>
+            <div data-aos="fade-right" data-aos-delay="200" class="text-justify subtitle-1">
+              <v-icon>fas fa-podcast</v-icon> <strong>Podcast </strong> <a href="https://anchor.fm/sandra-raymond" target="_blank">Pa-lante-Moving Forward Coach</a>
+            </div>
+          </v-col>
+        </v-row>
       </v-container>
     </v-row>
   </v-container>
@@ -31,7 +45,7 @@ export default {
     myCurrentLanguage() {
       return this.$store.getters.getLanguage;
     }
-  }
+  },
 
 
 }
