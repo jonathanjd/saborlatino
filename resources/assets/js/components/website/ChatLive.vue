@@ -47,7 +47,7 @@
                             filled
                             auto-grow
                             label="Mi Mensaje"
-                            rows="4"
+                            rows="2"
                             row-height="30"
                             shaped
                             no-resize
@@ -73,9 +73,9 @@ export default {
             },
             items: [
                 {
-                avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg',
+                avatar: '/img/user1.png',
                 title: 'Coach',
-                subtitle: "<span class='text--primary'>Ali Connors</span> &mdash; Hola, en que puedo Ayudarte?",
+                subtitle: "<span class='text--primary'>Sandra Raymond</span> &mdash; Hi!",
                 },
             ],
         }
@@ -99,7 +99,7 @@ export default {
             
             this.items.push(
                 {
-                avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg',
+                avatar: '/img/user2.png',
                 title: 'Usuario',
                 subtitle: "<span class='text--primary'>" + name + "</span>:  " + msj,
                 },

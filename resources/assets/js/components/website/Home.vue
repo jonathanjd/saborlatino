@@ -16,12 +16,15 @@
         <ChatLive></ChatLive>
         <v-snackbar
           v-model="snackbar"
-          color="default"
-          :timeout="10000"
+          color="white"
+          :timeout="20000"
+          right
+          top
+          light
         >
-          Language: <v-chip @click.prevent="changeLanguage('English')" class="ma-2" color="primary">English</v-chip> / <v-chip @click.prevent="changeLanguage('Spanish')" class="ma-2" color="red">Spanish</v-chip>
+          <v-chip @click.prevent="changeLanguage(myCurrentLanguage)" class="ma-2" color="primary">Translate</v-chip>
           <v-btn
-            color="white"
+            color="black"
             text
             @click="snackbar = false"
           >
@@ -65,14 +68,9 @@ export default {
 
     methods: {
 
-        changeLanguage(type) {
+        changeLanguage(value) {
 
-            let value = this.$store.getters.getLanguage;
-            if (type === 'Spanish') {
-                this.$store.dispatch('actionLanguage', false);
-            } else {
-                this.$store.dispatch('actionLanguage', true);
-            }
+          this.$store.dispatch('actionLanguage', !value);
 
       }
     },

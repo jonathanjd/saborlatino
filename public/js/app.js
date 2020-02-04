@@ -80576,7 +80576,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -80650,6 +80650,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -80683,14 +80686,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-        changeLanguage: function changeLanguage(type) {
+        changeLanguage: function changeLanguage(value) {
 
-            var value = this.$store.getters.getLanguage;
-            if (type === 'Spanish') {
-                this.$store.dispatch('actionLanguage', false);
-            } else {
-                this.$store.dispatch('actionLanguage', true);
-            }
+            this.$store.dispatch('actionLanguage', !value);
         }
     },
 
@@ -85584,9 +85582,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 mensaje: ''
             },
             items: [{
-                avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg',
+                avatar: '/img/user1.png',
                 title: 'Coach',
-                subtitle: "<span class='text--primary'>Ali Connors</span> &mdash; Hola, en que puedo Ayudarte?"
+                subtitle: "<span class='text--primary'>Sandra Raymond</span> &mdash; Hi!"
             }]
         };
     },
@@ -85609,7 +85607,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.items = this.items.reverse();
 
             this.items.push({
-                avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg',
+                avatar: '/img/user2.png',
                 title: 'Usuario',
                 subtitle: "<span class='text--primary'>" + name + "</span>:  " + msj
             });
@@ -85732,7 +85730,7 @@ var render = function() {
                       filled: "",
                       "auto-grow": "",
                       label: "Mi Mensaje",
-                      rows: "4",
+                      rows: "2",
                       "row-height": "30",
                       shaped: "",
                       "no-resize": ""
@@ -85826,7 +85824,13 @@ var render = function() {
       _c(
         "v-snackbar",
         {
-          attrs: { color: "default", timeout: 10000 },
+          attrs: {
+            color: "white",
+            timeout: 20000,
+            right: "",
+            top: "",
+            light: ""
+          },
           model: {
             value: _vm.snackbar,
             callback: function($$v) {
@@ -85836,7 +85840,6 @@ var render = function() {
           }
         },
         [
-          _vm._v("\n      Language: "),
           _c(
             "v-chip",
             {
@@ -85845,32 +85848,17 @@ var render = function() {
               on: {
                 click: function($event) {
                   $event.preventDefault()
-                  return _vm.changeLanguage("English")
+                  return _vm.changeLanguage(_vm.myCurrentLanguage)
                 }
               }
             },
-            [_vm._v("English")]
-          ),
-          _vm._v(" / "),
-          _c(
-            "v-chip",
-            {
-              staticClass: "ma-2",
-              attrs: { color: "red" },
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  return _vm.changeLanguage("Spanish")
-                }
-              }
-            },
-            [_vm._v("Spanish")]
+            [_vm._v("Translate")]
           ),
           _vm._v(" "),
           _c(
             "v-btn",
             {
-              attrs: { color: "white", text: "" },
+              attrs: { color: "black", text: "" },
               on: {
                 click: function($event) {
                   _vm.snackbar = false
