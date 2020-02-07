@@ -1,7 +1,9 @@
 <?php
 
 use App\Events\Event;
+use App\Mail\MainPalante;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,4 +37,10 @@ Route::group([
   Route::post('test-pusher', function(){
     event(new Event('hello world'));
     return response()->json(['msj' => 'success'], 200);
+  });
+
+  Route::post('send-email', function(Request $request){
+
+    Mail::to($request->email)->send(new MainPalante($request->name, $request->email, $request->message));
+
   });

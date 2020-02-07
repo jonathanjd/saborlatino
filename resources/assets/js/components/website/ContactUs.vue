@@ -24,6 +24,7 @@
                   :label="myCurrentLanguage ? 'Name *' : 'Nombre *'"
                   required
                   color="yellow accent-4"
+                  v-model="name"
                 ></v-text-field>
               </v-col>
 
@@ -35,6 +36,7 @@
                   :label="myCurrentLanguage ? 'Email *' : 'Correo *'"
                   required
                   color="yellow accent-4"
+                  v-model="email"
                 ></v-text-field>
               </v-col>
 
@@ -45,10 +47,11 @@
                   :hint="myCurrentLanguage ? 'Write your message' : 'Escribe tu mensaje'"
                   color="yellow accent-4"
                   no-resize
+                  v-model="message"
                 ></v-textarea>
               </v-col>
               <div class="text-center">
-                <v-btn @click="snackbar = true" primary>
+                <v-btn @click="sendEmail()" primary>
                   {{ myCurrentLanguage ? 'Send' : 'Enviar' }}
                 </v-btn>
               </div>
@@ -80,6 +83,9 @@ export default {
   data() {
     return {
       snackbar: false,
+      name: '',
+      email: '',
+      message: ''
     }
   },
 
@@ -88,6 +94,27 @@ export default {
         return this.$store.getters.getLanguage;
     }
   },
+
+  methods: {
+    sendEmail() {
+      if (this.name !== '' && this.email !== '' && this.message !== '') {
+      
+
+        const data = {
+          name: this.name,
+          email: this.email,
+          message: this.email
+        }
+      
+        Vue.axios.post('/api/send-email', data).then( response => {
+          console.log(response)
+          this.snackbar = true
+        })
+
+
+      }
+    }
+  }
 
 }
 </script>
