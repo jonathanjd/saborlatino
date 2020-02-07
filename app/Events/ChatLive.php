@@ -10,21 +10,23 @@ use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class Event implements ShouldBroadcast
+class ChatLive implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $message;
+    public $chatUserEmail;
+    public $chatUserID;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct($message)
+    public function __construct($chatUserID, $chatUserEmail)
     {
         //
-        $this->message = $message;
+        $this->chatUserID = $chatUserID;
+        $this->chatUserEmail = $chatUserEmail;
     }
 
     /**

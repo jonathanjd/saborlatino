@@ -60,10 +60,11 @@
         </v-form>
         <v-snackbar
           v-model="snackbar"
-          color="success"
+          :color="myColorSnack"
           :timeout="3000"
         >
-          {{ myCurrentLanguage ? 'Message sent succesfully!' : 'Mensaje enviado con éxito!' }}
+          {{ snackBarMsj }}
+      
           <v-btn
             color="black"
             text
@@ -85,13 +86,18 @@ export default {
       snackbar: false,
       name: '',
       email: '',
-      message: ''
+      message: '',
+      snackBarMsj: '',
+      snackBarColor: 'success'
     }
   },
 
   computed: {
     myCurrentLanguage() {
         return this.$store.getters.getLanguage;
+    },
+    myColorSnack() {
+      return this.snackBarColor;
     }
   },
 
@@ -103,15 +109,31 @@ export default {
         const data = {
           name: this.name,
           email: this.email,
-          message: this.email
+          message: this.message
+        }
+
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.email))
+        {
+          Vue.axios.post('/api/send-email', data).then( response => {
+  
+            this.snackBarMsj = this.myCurrentLanguage ? 'Message sent succesfully!' : 'Mensaje enviado con éxito!'
+            this.snackBarColor = 'success';
+            this.snackbar = true;
+            this.name = '';
+            this.email = '';
+            this.message = '';
+          })
+          
+        } else {
+          this.snackBarMsj = this.myCurrentLanguage ? 'Invalid email!' : 'Correo invalido!'
+          this.snackBarColor = 'warning';
+          this.snackbar = true;
         }
       
-        Vue.axios.post('/api/send-email', data).then( response => {
-          console.log(response)
-          this.snackbar = true
-        })
-
-
+      } else {
+          this.snackBarMsj = this.myCurrentLanguage ? 'All fields are required!' : 'Todos los campos son obligatios!'
+          this.snackBarColor = 'warning';
+          this.snackbar = true;
       }
     }
   }

@@ -26,12 +26,14 @@
                         @click=""
                         >
                         <v-list-item-avatar>
-                            <v-img :src="item.avatar"></v-img>
+                            <v-img :src="item.chat_users_send != 0 ? '/img/user2.png' : '/img/user1.png'"></v-img>
                         </v-list-item-avatar>
 
                         <v-list-item-content>
-                            <v-list-item-title v-html="item.title"></v-list-item-title>
-                            <v-list-item-subtitle v-html="item.subtitle"></v-list-item-subtitle>
+                            <v-list-item-title>
+                                {{ item.user_chat ?  item.user_chat.name : 'Sandra Raymond' }}
+                            </v-list-item-title>
+                            <v-list-item-subtitle v-html="item.message"></v-list-item-subtitle>
                         </v-list-item-content>
                         </v-list-item>
                     </template>
@@ -40,6 +42,12 @@
                         <v-text-field
                             v-model="form.name"
                             label="Mi Nombre"
+                            required
+                            >
+                        </v-text-field>
+                        <v-text-field
+                            v-model="form.email"
+                            label="Mi Correo"
                             required
                             >
                         </v-text-field>
@@ -102,6 +110,12 @@
                             required
                             >
                         </v-text-field>
+                        <v-text-field
+                            v-model="form.email"
+                            label="Mi Correo"
+                            required
+                            >
+                        </v-text-field>
                         <v-textarea
                             v-model="form.mensaje"
                             filled
@@ -135,13 +149,14 @@ export default {
         return {
             form: {
                 name: '',
+                email: '',
                 mensaje: ''
             },
             items: [
                 {
-                avatar: '/img/user1.png',
-                title: 'Coach',
-                subtitle: "<span class='text--primary'>Sandra Raymond</span> &mdash; Hi!",
+                chat_users_send: 0,
+                title: 'Sandra Raymond',
+                message: "Hi!",
                 },
             ],
 
@@ -150,14 +165,14 @@ export default {
     },
     computed: {
         myReverseChat () {
-            return this.items;
+            return this.items.reverse();
         },
         myCurrentLanguage() {
             return this.$store.getters.getLanguage;
         }
     },
 
-    created() {
+    mounted() {
         let pusher = new Pusher('0cd8d9bc7cfc6ca56831', {
             cluster: 'us2',
             forceTLS: true
@@ -165,14 +180,18 @@ export default {
 
         let channel = pusher.subscribe('my-channel');
 
-        channel.bind('my-event', function(data) {
-            console.log(data);
-            alert(JSON.stringify(data));
+        channel.bind('my-event', data => {
+            
+    
+            if (data.chatUserEmail === this.form.email) {
+                Vue.axios.get('/api/chat-message-user/'.concat(data.chatUserID)).then( response => {
+
+                this.items = response.data.myMessageUser;
+                });
+            }
+            
         });
 
-        Vue.axios.post('/api/test-pusher').then(res => {
-            console.log(res)
-        });
     },
 
     methods: {
@@ -181,19 +200,12 @@ export default {
             let name = this.form.name;
             let msj = this.form.mensaje;
 
-            this.items = this.items.reverse();
-            
-            this.items.push(
-                {
-                avatar: '/img/user2.png',
-                title: 'Usuario',
-                subtitle: "<span class='text--primary'>" + name + "</span>:  " + msj,
-                },
-            );
 
-            this.items = this.items.reverse();
+            Vue.axios.post('/api/test-pusher', this.form).then(res => {
+                this.form.mensaje = '';
+                this.items = res.data.messages;
 
-            this.form.mensaje = '';
+            });
         }
     },
 

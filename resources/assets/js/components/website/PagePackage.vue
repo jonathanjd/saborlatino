@@ -129,7 +129,7 @@ export default {
 
     methods: {
         fetchPackages() {
-            Vue.axios.get('/api/packages/web').then( response => {
+            Vue.axios.get('api/packages/web').then( response => {
                 if (response.data.msj === 'success') {
                     this.packages = response.data.package;
                 }

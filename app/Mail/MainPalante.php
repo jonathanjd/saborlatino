@@ -13,19 +13,19 @@ class MainPalante extends Mailable
 
     public $name;
     public $email;
-    public $message;
+    public $myMessage;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($name, $email, $message)
+    public function __construct($name, $email, $myMessage)
     {
         //
         $this->name = $name;
         $this->email = $email;
-        $this->message = $message;
+        $this->myMessage = $myMessage;
     }
 
     /**
@@ -38,6 +38,6 @@ class MainPalante extends Mailable
         return $this->view('email.send')
         ->with('name', $this->name)
         ->with('email', $this->email)
-        ->with('message', $this->message);
+        ->with('myMessage', $this->myMessage);
     }
 }

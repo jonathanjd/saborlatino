@@ -558,7 +558,7 @@
 {{ $email }}<br>
 <br>
 <strong>Message</strong><br>
-{{ $message }}
+<p>{{ $myMessage }}</p>
                         </td>
                     </tr>
                 </tbody></table>
